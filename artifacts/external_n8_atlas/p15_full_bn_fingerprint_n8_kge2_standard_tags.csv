@@ -1,0 +1,13 @@
+n,prime,k,l,size_X,lambda_plus,lambda_minus,bipartition,tag,dim,R_plus_bound,rank_mod_p,defect_to_bound,bucket
+8,1000003,2,2,40272,∅,8,∅|8,flip_sign_1d,1,1,1,0,EQUAL_R_BOUND
+8,1000003,3,3,480,∅,8,∅|8,flip_sign_1d,1,1,1,0,EQUAL_R_BOUND
+8,1000003,4,4,6,∅,8,∅|8,flip_sign_1d,1,1,1,0,EQUAL_R_BOUND
+8,1000003,2,2,40272,7,1,7|1,V_ref,8,4,4,0,EQUAL_R_BOUND
+8,1000003,3,3,480,7,1,7|1,V_ref,8,4,4,0,EQUAL_R_BOUND
+8,1000003,4,4,6,7,1,7|1,V_ref,8,4,4,0,EQUAL_R_BOUND
+8,1000003,2,2,40272,8,∅,8|∅,trivial,1,1,1,0,EQUAL_R_BOUND
+8,1000003,3,3,480,8,∅,8|∅,trivial,1,1,1,0,EQUAL_R_BOUND
+8,1000003,4,4,6,8,∅,8|∅,trivial,1,1,1,0,EQUAL_R_BOUND
+8,1000003,2,2,40272,7.1,∅,7.1|∅,V_pair_std,7,3,3,0,EQUAL_R_BOUND
+8,1000003,3,3,480,7.1,∅,7.1|∅,V_pair_std,7,3,3,0,EQUAL_R_BOUND
+8,1000003,4,4,6,7.1,∅,7.1|∅,V_pair_std,7,3,3,0,EQUAL_R_BOUND

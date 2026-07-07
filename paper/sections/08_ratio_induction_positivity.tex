@@ -1,0 +1,36 @@
+\section{Ratio-Induction Positivity}\label{sec:positivity}
+
+\begin{lemma}[Order-three positivity]\label{lem:positivity}
+Let $U_m$ denote either $H_m$ or $K_m$, with an exact order-three recurrence
+\[
+  p_0(m)U_m+p_1(m)U_{m+1}+p_2(m)U_{m+2}+p_3(m)U_{m+3}=0.
+\]
+Set $\rho_m=U_{m+1}/U_m$.  If the required base rows, adjacent base-ratio checks, and polynomial sign checks hold, then $\rho_m\ge4m^2$ propagates and $U_m>0$ for all rows in the theorem range.
+\end{lemma}
+
+\begin{proof}
+The recurrence gives
+\[
+\rho_{m+2}=\frac{-p_2(m)-p_1(m)/\rho_{m+1}-p_0(m)/(\rho_m\rho_{m+1})}{p_3(m)}.
+\]
+For the $H_m$ recurrence, the base rows $m=2,3,4$ have $H_m>0$ and $\rho_m\ge4m^2$, and the polynomial signs are
+$p_0>0$, $p_1>0$, $-p_2>0$, $p_3>0$, and
+\[
+D_H(m)=16m^2(m+1)^2(-p_2)-4m^2p_1-p_0-64m^2(m+1)^2(m+2)^2p_3>0.
+\]
+This is exactly the cleared-denominator inequality for $\rho_{m+2}\ge4(m+2)^2$ under
+$\rho_m\ge4m^2$ and $\rho_{m+1}\ge4(m+1)^2$.
+
+For the $K_m$ recurrence, the base rows $m=2,\ldots,8$ have $K_m>0$ and $\rho_m\ge4m^2$, and for $m\ge7$ the polynomial signs are
+$p_0>0$, $p_1\le0$, $-p_2>0$, $p_3>0$, and
+\[
+D_K(m)=16m^2(m+1)^2(-p_2)-p_0-64m^2(m+1)^2(m+2)^2p_3>0.
+\]
+The term $p_1\le0$ can be discarded because it improves the lower bound.  The adjacent base ratios $\rho_7$ and
+$\rho_8$ seed the recurrence from $m=7$.  Hence the same induction proves $K_m>0$ for every $m\ge2$.
+The recurrence identities are holonomic-style exact identities in the standard sense of creative telescoping and
+P-recursive verification \cite{Zeilberger1990,PWZ1996}; no finite extrapolation is used.  In the replay table,
+\path{P15_S8_HM_RECURRENCE_CERTIFICATE} supplies the $H_m$ recurrence, base rows, and sign polynomials, while
+\path{P15_S9C_KM_RECURRENCE_CERTIFICATE} supplies the corresponding $K_m$ data.  The inequalities above are exactly the
+cleared-denominator checks recorded by those certificates.
+\end{proof}

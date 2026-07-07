@@ -1,0 +1,52 @@
+\section{Proof Strategy and Matching-Scheme Background}\label{sec:background}
+
+Let $P_\rho$ be the permutation matrix of the reversal involution and put
+\[
+  P_+=\frac{I+P_\rho}{2}.
+\]
+The centralizer of $\rho$ in $S_n$ acts on ordered coordinate pairs.  For even $n=2m$, its orbital algebra on
+coordinates is the matching, or cocktail-party, association scheme with basis
+$\{I,P_\rho,J-I-P_\rho\}$.  For odd $n=2m+1$, the center coordinate adds the usual center row and column orbitals,
+but the non-center pair block is the same matching-scheme block.  We use only the standard consequences that
+$P_+$ projects onto the $+1$ eigenspace of $P_\rho$, that
+\[
+  \rank P_+=\left\lceil\frac n2\right\rceil,
+\]
+and that the corresponding pair-standard quotient has dimension $\lceil n/2\rceil-1$.
+These are classical association-scheme facts; the proof below supplies the layer-specific collapse onto these
+spaces and proves that the relevant scalars are nonzero.
+\begin{lemma}[Even collapse and positivity]\label{lem:even}
+For even $n=2m$ and every nonempty diagonal row $\BtildeI_{2m}(k,k)$ with $k\ge1$, the reference-channel aggregate
+collapses to a positive scalar multiple of $P_+$, and the pair-standard aggregate collapses to a positive scalar on the
+corresponding matching-scheme standard quotient.  Hence the two even-row ranks are $m$ and $m-1$.
+\end{lemma}
+
+\begin{proof}
+The row is invariant under the centralizer of $\rho$, so the coordinate aggregates lie in the matching-scheme orbital
+algebra.  In the reference channel, every generic off-pair orbit has a sign-reversing involution, while the diagonal
+and reversal orbits are equal by reversal symmetry.  Thus only the $P_+$ component remains.  The same block cancellation
+on ordered pair coordinates leaves only the pair-standard quotient component.  The permanent-domination argument gives
+strict positivity of these surviving scalars on every nonempty even diagonal row, so the ranks are the classical
+multiplicities of the two matching-scheme components.
+\end{proof}
+
+\begin{lemma}[Odd structural reduction]\label{lem:oddreduction}
+Let $n=2m+1$.  The odd reference channel splits as
+\[
+  M_{\mathrm{ref}}=2aP_+^{\mathrm{pairs}}+a_cE_{\mathrm{center}}.
+\]
+The center split and trace identities reduce all nonempty odd reference rows except $k=1$ to the even positive
+scalars and the center scalar.  In the odd pair-standard channel, the bridge $\mu=a_c+4a_{\mathrm{even}}$ and the
+trace identity reduce all nonempty rows with $k\ge2$ to the same positive inputs.  Thus the only odd residuals are the
+reference scalar $a(2m+1,1)-a(2m,1)$ and the pair-standard scalar $\lambda'(2m+1,1)$.
+\end{lemma}
+
+\begin{proof}
+Separate the fixed center coordinate from the $m$ non-center reversal pairs.  The center coordinate contributes the
+one-dimensional block $E_{\mathrm{center}}$, while the non-center coordinates remain in the matching-scheme block
+spanned by the pair idempotent $P_+^{\mathrm{pairs}}$.  Taking traces on the diagonal row expresses the non-center
+reference scalar in terms of the even scalar and the center contribution, except in the $k=1$ row where the
+center-nonfixed correction is not eliminated.  On the pair-standard side, the non-center pair quotient has two scalar
+pieces; the displayed bridge identifies one of them with already positive reference/even data, and the trace identity
+solves for the other for $k\ge2$.  The row $k=1$ leaves precisely $\lambda'$.
+\end{proof}

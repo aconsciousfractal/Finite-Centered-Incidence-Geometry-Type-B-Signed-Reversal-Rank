@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "claim": "The lambda_plus=(1,1) block of B~I_8(3,3) is zero in every complement Q[S_6] block before applying Specht modules.",
+  "n": 8,
+  "k": 3,
+  "l": 3,
+  "lambda_plus": "1.1",
+  "complement_size": 6,
+  "subset_count": 28,
+  "permutations_scanned": 40320,
+  "active_terms": 192,
+  "group_algebra_keys": 96,
+  "nonzero_group_algebra_keys": 0,
+  "cancelling_pairs": 96,
+  "bad_pairs": 0,
+  "signed_coefficient_patterns": {
+    "(-4, 4)": 96
+  },
+  "source_destination_type_patterns": {
+    "('split_pairs', 'split_pairs', (4, 4), (-1, 1))": 96
+  },
+  "all_terms_abs_coeff": 4,
+  "total_abs_before_cancellation": 768,
+  "total_abs_after_cancellation": 0,
+  "boundary": "Finite group-algebra cancellation certificate only; no full native B_n fingerprint theorem or classification theorem.",
+  "runtime_seconds": 21.43
+}

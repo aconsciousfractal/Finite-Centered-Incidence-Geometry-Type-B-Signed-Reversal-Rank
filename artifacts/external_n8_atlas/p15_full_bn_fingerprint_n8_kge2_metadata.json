@@ -1,0 +1,27 @@
+{
+  "N_LIST": [
+    8
+  ],
+  "LAYER_MODE": "custom",
+  "CUSTOM_LAYERS": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "INCLUDE_K0": false,
+  "PRIMES": [
+    1000003
+  ],
+  "rows": 555,
+  "runtime_seconds": 973.6715033054352,
+  "boundary": "finite native B_n fingerprint scout; not a theorem claim"
+}

@@ -1,0 +1,33 @@
+\section{Definitions and Main Statement}\label{sec:defs}
+
+Let $\Bn$ be the signed permutation group, written as pairs $(\pi,\varepsilon)$ with $\pi\in S_n$ and
+$\varepsilon_i\in\{\pm1\}$.  We use zero-indexed coordinates and set
+\[
+  \rho(i)=n-1-i.
+\]
+Define
+\[
+\BtildeI_n(k,\ell)=\{(\pi,\varepsilon)\in \Bn:
+  \#\{i:\pi(i)=i,\varepsilon_i=+1\}=k,
+  \#\{i:\pi(i)=\rho(i),\varepsilon_i=+1\}=\ell\}.
+\]
+The theorem concerns only the diagonal layer $\BtildeI_n(k,k)$ and only the two ambient standard-channel aggregate
+operators $M_{\mathrm{ref}}$ and $M_{\mathrm{pair\text{-}std}}$.
+
+\begin{theorem}[Main theorem]\label{thm:main}
+For every $n\ge2$ and every $k\ge1$ such that $\BtildeI_n(k,k)$ is nonempty,
+\[
+  \rank M_{\mathrm{ref}}(\BtildeI_n(k,k))=\left\lceil\frac n2\right\rceil,
+  \qquad
+  \rank M_{\mathrm{pair\text{-}std}}(\BtildeI_n(k,k))=\left\lceil\frac n2\right\rceil-1.
+\]
+\end{theorem}
+
+\begin{remark}[Boundary]
+No Type-D theorem, full $B_n$ fingerprint theorem, enumeration novelty claim, or general Weyl theorem is asserted.
+The positive-fixed marginal is treated as classical signed-permutation enumeration; in particular the
+positive-fixed zero row is the type-B derangement sequence \cite{OEISA000354,ChenZhang2007}.  The rank number and the
+reversal projector are matching-scheme bookkeeping \cite{Delsarte1973,BannaiIto1984,GodsilRoyle2001}.  The contribution here is the
+collapse and scalar positivity for the specific noncentral layer $\BtildeI_n(k,k)$, plus the separate separator theorem
+below for $\BtildeI_n(1,1)$.
+\end{remark}

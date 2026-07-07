@@ -1,0 +1,541 @@
+{
+  "boundary": [
+    "No public theorem promotion at S4; S7/S9 still pending.",
+    "Rank number and P_plus are matching-scheme bookkeeping, cite not claim.",
+    "P15 contribution is collapse plus positivity onto the idempotent.",
+    "Odd-n, H_m, C2xC2 square, Type-D scout, and full B_n fingerprint are outside S4."
+  ],
+  "checks": [
+    {
+      "id": "even_channel_exact_replay",
+      "range": "even full enumeration cases inherited from S3: n=4,6, diagonal nonempty k>=1",
+      "rows": [
+        {
+          "a_actual": 8,
+          "a_closed_form": 8,
+          "a_closed_form_ok": true,
+          "collapse_ok": true,
+          "expected_rank_M_pair_std": 1,
+          "expected_rank_M_ref": 2,
+          "k": 1,
+          "lambda_pair_actual": "8",
+          "lambda_pair_formula": "8",
+          "lambda_pair_formula_ok": true,
+          "n": 4,
+          "parity": "even",
+          "rank_M_pair_std": 1,
+          "rank_M_ref": 2,
+          "rank_ok": true,
+          "size": 40,
+          "size_closed_form_ok": true,
+          "sum_neg_fixed": 8,
+          "trace_flip_ok": true
+        },
+        {
+          "a_actual": 1,
+          "a_closed_form": 1,
+          "a_closed_form_ok": true,
+          "collapse_ok": true,
+          "expected_rank_M_pair_std": 1,
+          "expected_rank_M_ref": 2,
+          "k": 2,
+          "lambda_pair_actual": "2",
+          "lambda_pair_formula": "2",
+          "lambda_pair_formula_ok": true,
+          "n": 4,
+          "parity": "even",
+          "rank_M_pair_std": 1,
+          "rank_M_ref": 2,
+          "rank_ok": true,
+          "size": 2,
+          "size_closed_form_ok": true,
+          "sum_neg_fixed": 0,
+          "trace_flip_ok": true
+        },
+        {
+          "a_actual": 376,
+          "a_closed_form": 376,
+          "a_closed_form_ok": true,
+          "collapse_ok": true,
+          "expected_rank_M_pair_std": 2,
+          "expected_rank_M_ref": 3,
+          "k": 1,
+          "lambda_pair_actual": "912",
+          "lambda_pair_formula": "912",
+          "lambda_pair_formula_ok": true,
+          "n": 6,
+          "parity": "even",
+          "rank_M_pair_std": 2,
+          "rank_M_ref": 3,
+          "rank_ok": true,
+          "size": 4080,
+          "size_closed_form_ok": true,
+          "sum_neg_fixed": 1824,
+          "trace_flip_ok": true
+        },
+        {
+          "a_actual": 38,
+          "a_closed_form": 38,
+          "a_closed_form_ok": true,
+          "collapse_ok": true,
+          "expected_rank_M_pair_std": 2,
+          "expected_rank_M_ref": 3,
+          "k": 2,
+          "lambda_pair_actual": "84",
+          "lambda_pair_formula": "84",
+          "lambda_pair_formula_ok": true,
+          "n": 6,
+          "parity": "even",
+          "rank_M_pair_std": 2,
+          "rank_M_ref": 3,
+          "rank_ok": true,
+          "size": 132,
+          "size_closed_form_ok": true,
+          "sum_neg_fixed": 36,
+          "trace_flip_ok": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "even_closed_form_positive_sweep",
+      "range": "even n=4..20, nonempty k>=1",
+      "rows": [
+        {
+          "n": 4,
+          "values": [
+            {
+              "a": 8,
+              "a_positive": true,
+              "k": 1,
+              "size": 40
+            },
+            {
+              "a": 1,
+              "a_positive": true,
+              "k": 2,
+              "size": 2
+            }
+          ]
+        },
+        {
+          "n": 6,
+          "values": [
+            {
+              "a": 376,
+              "a_positive": true,
+              "k": 1,
+              "size": 4080
+            },
+            {
+              "a": 38,
+              "a_positive": true,
+              "k": 2,
+              "size": 132
+            }
+          ]
+        },
+        {
+          "n": 8,
+          "values": [
+            {
+              "a": 62448,
+              "a_positive": true,
+              "k": 1,
+              "size": 922560
+            },
+            {
+              "a": 8352,
+              "a_positive": true,
+              "k": 2,
+              "size": 40272
+            },
+            {
+              "a": 168,
+              "a_positive": true,
+              "k": 3,
+              "size": 480
+            },
+            {
+              "a": 3,
+              "a_positive": true,
+              "k": 4,
+              "size": 6
+            }
+          ]
+        },
+        {
+          "n": 10,
+          "values": [
+            {
+              "a": 17724736,
+              "a_positive": true,
+              "k": 1,
+              "size": 333714560
+            },
+            {
+              "a": 2571824,
+              "a_positive": true,
+              "k": 2,
+              "size": 16003360
+            },
+            {
+              "a": 61856,
+              "a_positive": true,
+              "k": 3,
+              "size": 230720
+            },
+            {
+              "a": 474,
+              "a_positive": true,
+              "k": 4,
+              "size": 1260
+            }
+          ]
+        },
+        {
+          "n": 12,
+          "values": [
+            {
+              "a": 7736076800,
+              "a_positive": true,
+              "k": 1,
+              "size": 176839075200
+            },
+            {
+              "a": 1183216240,
+              "a_positive": true,
+              "k": 2,
+              "size": 8967884640
+            },
+            {
+              "a": 33531520,
+              "a_positive": true,
+              "k": 3,
+              "size": 151994240
+            },
+            {
+              "a": 320620,
+              "a_positive": true,
+              "k": 4,
+              "size": 1039560
+            },
+            {
+              "a": 1440,
+              "a_positive": true,
+              "k": 5,
+              "size": 3600
+            },
+            {
+              "a": 10,
+              "a_positive": true,
+              "k": 6,
+              "size": 20
+            }
+          ]
+        },
+        {
+          "n": 14,
+          "values": [
+            {
+              "a": 4802231769216,
+              "a_positive": true,
+              "k": 1,
+              "size": 129088846199040
+            },
+            {
+              "a": 760358214432,
+              "a_positive": true,
+              "k": 2,
+              "size": 6788348193984
+            },
+            {
+              "a": 23742743680,
+              "a_positive": true,
+              "k": 3,
+              "size": 126834453760
+            },
+            {
+              "a": 266918520,
+              "a_positive": true,
+              "k": 4,
+              "size": 1018216080
+            },
+            {
+              "a": 1341360,
+              "a_positive": true,
+              "k": 5,
+              "size": 3988320
+            },
+            {
+              "a": 3580,
+              "a_positive": true,
+              "k": 6,
+              "size": 8680
+            }
+          ]
+        },
+        {
+          "n": 16,
+          "values": [
+            {
+              "a": 4019301693193472,
+              "a_positive": true,
+              "k": 1,
+              "size": 124185000461670400
+            },
+            {
+              "a": 652194325100416,
+              "a_positive": true,
+              "k": 2,
+              "size": 6699241307462144
+            },
+            {
+              "a": 21731519358080,
+              "a_positive": true,
+              "k": 3,
+              "size": 133639210664960
+            },
+            {
+              "a": 274313818240,
+              "a_positive": true,
+              "k": 4,
+              "size": 1203683539520
+            },
+            {
+              "a": 1601963552,
+              "a_positive": true,
+              "k": 5,
+              "size": 5471070976
+            },
+            {
+              "a": 4945360,
+              "a_positive": true,
+              "k": 6,
+              "size": 13840960
+            },
+            {
+              "a": 9520,
+              "a_positive": true,
+              "k": 7,
+              "size": 22400
+            },
+            {
+              "a": 35,
+              "a_positive": true,
+              "k": 8,
+              "size": 70
+            }
+          ]
+        },
+        {
+          "n": 18,
+          "values": [
+            {
+              "a": 4361403553993394176,
+              "a_positive": true,
+              "k": 1,
+              "size": 152254341783830384640
+            },
+            {
+              "a": 720773220586694144,
+              "a_positive": true,
+              "k": 2,
+              "size": 8370412502506251264
+            },
+            {
+              "a": 25160250817063936,
+              "a_positive": true,
+              "k": 3,
+              "size": 175003912007178240
+            },
+            {
+              "a": 345078798353856,
+              "a_positive": true,
+              "k": 4,
+              "size": 1712464206106752
+            },
+            {
+              "a": 2265177225472,
+              "a_positive": true,
+              "k": 5,
+              "size": 8742022248960
+            },
+            {
+              "a": 7985618368,
+              "a_positive": true,
+              "k": 6,
+              "size": 25239570048
+            },
+            {
+              "a": 16589440,
+              "a_positive": true,
+              "k": 7,
+              "size": 44432640
+            },
+            {
+              "a": 22330,
+              "a_positive": true,
+              "k": 8,
+              "size": 51660
+            }
+          ]
+        },
+        {
+          "n": 20,
+          "values": [
+            {
+              "a": 5954306059694963423232,
+              "a_positive": true,
+              "k": 1,
+              "size": 231736747350506094397440
+            },
+            {
+              "a": 998068894463265631488,
+              "a_positive": true,
+              "k": 2,
+              "size": 12927530240797295946240
+            },
+            {
+              "a": 36080002414800863232,
+              "a_positive": true,
+              "k": 3,
+              "size": 279994965189256826880
+            },
+            {
+              "a": 526385881297277568,
+              "a_positive": true,
+              "k": 4,
+              "size": 2914665943851728640
+            },
+            {
+              "a": 3781904479105536,
+              "a_positive": true,
+              "k": 5,
+              "size": 16279816931578368
+            },
+            {
+              "a": 14903225112384,
+              "a_positive": true,
+              "k": 6,
+              "size": 52505371820160
+            },
+            {
+              "a": 34910217216,
+              "a_positive": true,
+              "k": 7,
+              "size": 104169300480
+            },
+            {
+              "a": 52137540,
+              "a_positive": true,
+              "k": 8,
+              "size": 134983800
+            },
+            {
+              "a": 55440,
+              "a_positive": true,
+              "k": 9,
+              "size": 126000
+            },
+            {
+              "a": 126,
+              "a_positive": true,
+              "k": 10,
+              "size": 252
+            }
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "even_permanent_domination_replay",
+      "range": "all feasible positive-hit patterns for even n=4,6 from S3 Ryser replay",
+      "rows": [
+        {
+          "all_patterns_le_1": true,
+          "checked_patterns": 8,
+          "feasible_patterns": 8,
+          "k": 1,
+          "max_E_neg_fixed": "1/5",
+          "max_pattern": {
+            "P": [
+              0
+            ],
+            "Q": [
+              1
+            ]
+          },
+          "n": 4
+        },
+        {
+          "all_patterns_le_1": true,
+          "checked_patterns": 2,
+          "feasible_patterns": 2,
+          "k": 2,
+          "max_E_neg_fixed": "0",
+          "max_pattern": null,
+          "n": 4
+        },
+        {
+          "all_patterns_le_1": true,
+          "checked_patterns": 24,
+          "feasible_patterns": 24,
+          "k": 1,
+          "max_E_neg_fixed": "38/85",
+          "max_pattern": {
+            "P": [
+              0
+            ],
+            "Q": [
+              1
+            ]
+          },
+          "n": 6
+        },
+        {
+          "all_patterns_le_1": true,
+          "checked_patterns": 30,
+          "feasible_patterns": 30,
+          "k": 2,
+          "max_E_neg_fixed": "1",
+          "max_pattern": {
+            "P": [
+              0,
+              5
+            ],
+            "Q": [
+              1,
+              4
+            ]
+          },
+          "n": 6
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "failed_checks": [],
+  "gate": "P15-S4 even-n theorem",
+  "project": "P15 signed reversal rank theorem",
+  "proof_checklist": {
+    "collapse_M_ref_even": true,
+    "exact_engine_S3": true,
+    "no_odd_claim_promoted": true,
+    "no_type_D_claim_promoted": true,
+    "pair_standard_trace_identity_even": true,
+    "permanent_domination_lemma_available": true,
+    "prior_art_boundary_S2": true,
+    "rank_number_and_projector_classical_boundary_carried": true,
+    "source_lock_S1": true,
+    "trace_flip_identity_even": true
+  },
+  "schema": "p15.s4.even_theorem_certificate.v1",
+  "status": "PASS",
+  "theorem_scope": "even n>=4, k>=1 with B~I_n(k,k) nonempty, two ambient standard channels only",
+  "theorem_statement": {
+    "M_pair_std_rank": "n/2 - 1",
+    "M_ref_rank": "n/2"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "description": "Verifies R_m(1,t)-d_z R_m(1,t) local algebra and the resulting P_m target over Z[m,t].",
+      "id": "H_transfer_agent1_to_univariate_P_m",
+      "residual_H_terms": [],
+      "residual_L_terms": [],
+      "status": "PASS",
+      "target_H_degrees": {
+        "m": 2,
+        "t": 5,
+        "terms": 16
+      },
+      "target_L_degrees": {
+        "m": 1,
+        "t": 5,
+        "terms": 10
+      }
+    },
+    {
+      "description": "Verifies the S9 bivariate k=1 target collapses to B(t)^(m-4)L_m(t) over Z[m,t].",
+      "id": "K_bivariate_to_univariate_L_m",
+      "local_degrees": {
+        "m": 2,
+        "t": 8,
+        "terms": 22
+      },
+      "residual_terms": [],
+      "status": "PASS",
+      "target_degrees": {
+        "m": 2,
+        "t": 8,
+        "terms": 22
+      }
+    }
+  ],
+  "closed_by_this_script": [
+    "H_m intermediate transfer algebra to the displayed P_m polynomial.",
+    "K_m S9 bivariate target transfer algebra to the displayed L_m polynomial."
+  ],
+  "closed_downstream": [
+    "S11A-H is closed by P15_S11A_H_TRUE_SCALAR_EDGE_INSERTION_VERIFIER plus S8.",
+    "S11A-K is closed by P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER plus P15_S11A_K_GLOBAL_PRODUCT_PHI_CERTIFICATE plus S9C."
+  ],
+  "decision": "Symbolic transfer identities pass over Z[m,t]; S11A formula targets are algebraically coherent. Downstream S11A-H and S11A-K certificates now close both true-scalar all-m links.",
+  "failed_checks": [],
+  "gate": "P15-S11A scalar-link symbolic transfer verifier",
+  "no_go_rules_obeyed": {
+    "does_not_use_formula_sequence_as_true_scalar_check": true,
+    "no_held_out_extension": true,
+    "no_symbolic_search": true
+  },
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s11a.scalar_link_symbolic_verifier.v1",
+  "status": "PASS"
+}

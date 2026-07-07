@@ -1,0 +1,172 @@
+{
+  "boundary": "S8 closes the recurrence and positivity of the displayed H_m formula sequence only; downstream S11A-H owns and now supplies the formula-to-true-scalar link. S8 alone promotes no public theorem.",
+  "checks": [
+    {
+      "B": "2*x^2 - 4*x + 1",
+      "R_degrees": {
+        "m": 10,
+        "terms": 125,
+        "x": 11
+      },
+      "S_at_x0_zero": true,
+      "S_degrees": {
+        "m": 9,
+        "terms": 107,
+        "x": 11
+      },
+      "boundary_infinity_zero": true,
+      "id": "all_m_telescoping_certificate",
+      "identity": "B*S_x + ((m-3)*B_x - B)*S = B*sum_j p_j(m)2^jB^jCbar_{m+j}",
+      "residual_terms": 0,
+      "status": "PASS",
+      "valid_for": "m>=3, with m=2 checked separately"
+    },
+    {
+      "first_H_values": {
+        "10": 213757294590287438910976,
+        "2": 22,
+        "3": 2940,
+        "4": 734296,
+        "5": 280134128,
+        "6": 153443726688,
+        "7": 114569137164224,
+        "8": 112037519975904640,
+        "9": 139078935678503599872
+      },
+      "id": "edge_case_and_finite_sanity",
+      "m2_residual": 0,
+      "nonzero_residuals": {},
+      "range": "m=2..100",
+      "status": "PASS"
+    },
+    {
+      "D_coefficients_low_to_high": [
+        0,
+        -835520,
+        -9849504,
+        -44247808,
+        -100935648,
+        -118187264,
+        -39470912,
+        77156096,
+        121383680,
+        82258432,
+        30545920,
+        6021120,
+        491520
+      ],
+      "base_ok": true,
+      "base_rows": [
+        {
+          "H_m": 22,
+          "m": 2,
+          "ok": true,
+          "rho_den": 11,
+          "rho_num": 1470,
+          "threshold_4m2": 16
+        },
+        {
+          "H_m": 2940,
+          "m": 3,
+          "ok": true,
+          "rho_den": 735,
+          "rho_num": 183574,
+          "threshold_4m2": 36
+        },
+        {
+          "H_m": 734296,
+          "m": 4,
+          "ok": true,
+          "rho_den": 91787,
+          "rho_num": 35016766,
+          "threshold_4m2": 64
+        }
+      ],
+      "conclusion": "H_m>0 for all m>=2",
+      "id": "all_m_H_m_positivity_from_recurrence",
+      "sign_and_D_checks": [
+        {
+          "dominant_coefficient": 835520,
+          "dominant_degree": 1,
+          "domination_threshold_integer": 2,
+          "finite_check_ok": true,
+          "finite_checked_range": [],
+          "lower_negative_abs_sum": 0,
+          "name": "p0_positive",
+          "status": "PASS",
+          "tail_coefficients_nonnegative": true
+        },
+        {
+          "dominant_coefficient": 2074768,
+          "dominant_degree": 1,
+          "domination_threshold_integer": 2,
+          "finite_check_ok": true,
+          "finite_checked_range": [],
+          "lower_negative_abs_sum": 0,
+          "name": "p1_positive",
+          "status": "PASS",
+          "tail_coefficients_nonnegative": true
+        },
+        {
+          "dominant_coefficient": 1983040,
+          "dominant_degree": 4,
+          "domination_threshold_integer": 2,
+          "finite_check_ok": true,
+          "finite_checked_range": [],
+          "lower_negative_abs_sum": 3267450,
+          "name": "minus_p2_positive",
+          "status": "PASS",
+          "tail_coefficients_nonnegative": true
+        },
+        {
+          "dominant_coefficient": 1016,
+          "dominant_degree": 3,
+          "domination_threshold_integer": 15,
+          "finite_check_ok": true,
+          "finite_checked_range": [
+            2,
+            14
+          ],
+          "lower_negative_abs_sum": 15001,
+          "name": "p3_positive",
+          "status": "PASS",
+          "tail_coefficients_nonnegative": true
+        },
+        {
+          "dominant_coefficient": 77156096,
+          "dominant_degree": 7,
+          "domination_threshold_integer": 5,
+          "finite_check_ok": true,
+          "finite_checked_range": [
+            2,
+            4
+          ],
+          "lower_negative_abs_sum": 313526656,
+          "name": "D_positive",
+          "status": "PASS",
+          "tail_coefficients_nonnegative": true
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "closed_at_S8": [
+    "The order-3 recurrence for H_m is certified for all m>=3 by a concrete integration-by-parts certificate.",
+    "The m=2 recurrence edge case is checked exactly.",
+    "The elementary ratio induction proves H_m>0 for all m>=2 from the recurrence.",
+    "S8 itself does not identify this displayed formula sequence with the true odd V_ref k=1 scalar residual; downstream S11A-H now supplies that closure."
+  ],
+  "closed_downstream_after_S8": [
+    "S11A-H formula-to-true-scalar closure is now closed downstream by the S11A-H edge-insertion verifier."
+  ],
+  "decision": "S8 H_m formula-sequence recurrence certificate passes; H_m>0 for all m>=2 is certified for the displayed formula sequence.",
+  "failed_checks": [],
+  "gate": "P15-S8 H_m recurrence certificate",
+  "open_after_S8": [
+    "Odd V_pair-std is handled downstream by S9/S9C, and its k=1 formula-to-true-scalar link is now closed downstream by S11A-K.",
+    "D~I remains Type-D scout-only; no Type-D theorem is promoted."
+  ],
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s8.hm_recurrence_certificate.v1",
+  "status": "PASS"
+}

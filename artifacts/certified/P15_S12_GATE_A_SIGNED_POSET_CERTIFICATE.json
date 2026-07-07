@@ -1,0 +1,2885 @@
+{
+  "schema": "p15.s12_gate_a_signed_poset_certificate.v1",
+  "status": "GATE_A_CERTIFICATE",
+  "object": "X_n = B~I_n(1,1) subset B_n",
+  "signed_total_order_convention": "T(w)=-w_n<...<-w_1<0<w_1<...<w_n",
+  "n4_witness_rows_nonzero": [
+    {
+      "a": -4,
+      "b": -3,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": -2,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": -1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 2,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 3,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    }
+  ],
+  "n4_witness_rows_with_zero": [
+    {
+      "a": -4,
+      "b": -3,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": -2,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": -1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 0,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 2,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 3,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -4,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 0,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -3,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": -1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 0,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -2,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 0,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": -1,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": -1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 0,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": -1,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 0,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 0,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -3,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": -1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 0,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "witness": [
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        2,
+        -3,
+        1,
+        0,
+        -1,
+        3,
+        -2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "witness": [
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "signed_total_order": [
+        4,
+        -2,
+        3,
+        -1,
+        0,
+        1,
+        -3,
+        2,
+        -4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -4,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": -1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 0,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "witness": [
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "signed_total_order": [
+        -4,
+        -2,
+        3,
+        1,
+        0,
+        -1,
+        -3,
+        2,
+        4
+      ],
+      "kills_precedence_a_before_b": true
+    }
+  ],
+  "sign_extension_rows_n4_n7": [
+    {
+      "n": 4,
+      "total_specs": 32,
+      "failure_count": 2,
+      "one_label_failure_count": 0,
+      "failures": [
+        [
+          -1,
+          -4
+        ],
+        [
+          -2,
+          -3
+        ]
+      ],
+      "all_specs_extend": false,
+      "all_one_label_specs_extend": true
+    },
+    {
+      "n": 5,
+      "total_specs": 50,
+      "failure_count": 0,
+      "one_label_failure_count": 0,
+      "failures": [],
+      "all_specs_extend": true,
+      "all_one_label_specs_extend": true
+    },
+    {
+      "n": 6,
+      "total_specs": 72,
+      "failure_count": 0,
+      "one_label_failure_count": 0,
+      "failures": [],
+      "all_specs_extend": true,
+      "all_one_label_specs_extend": true
+    },
+    {
+      "n": 7,
+      "total_specs": 98,
+      "failure_count": 0,
+      "one_label_failure_count": 0,
+      "failures": [],
+      "all_specs_extend": true,
+      "all_one_label_specs_extend": true
+    }
+  ],
+  "summary": {
+    "n4_ordered_nonzero_pairs": 56,
+    "n4_all_nonzero_precedences_killed": true,
+    "n4_ordered_pairs_with_zero": 72,
+    "n4_all_precedences_with_zero_killed": true,
+    "n4_X_size": 40,
+    "n4_distinct_witnesses_with_zero": 3,
+    "sign_extension_all_specs_n5_n7": true,
+    "sign_extension_all_one_label_specs_n4_n7": true,
+    "sign_extension_n4_failure_count": 2,
+    "gate_a_status": "PASS_FOR_SIGNED_POSET_ROUTE"
+  }
+}

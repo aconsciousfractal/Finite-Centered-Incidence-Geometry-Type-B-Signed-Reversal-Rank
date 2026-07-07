@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "claim": "The pure-plus zero M_{(2.2.2.1.1|empty)}(B~I_8(3,3)) is explained by Johnson degree-drop after sign twist: A_sgn(M^(3)) is contained in the pair-incidence submodule U_2, so the top quotient S^(5,3) is killed.",
+  "n": 8,
+  "k": 3,
+  "l": 3,
+  "pure_plus_shape": "2.2.2.1.1",
+  "conjugate_shape": "5.3",
+  "subset_size": 3,
+  "subset_module_dim": 56,
+  "pair_count": 28,
+  "nonzero_underlying_permutations": 102,
+  "layer_size": 480,
+  "weight_patterns": {
+    "(3, 3, 4)": 96,
+    "(4, 4, 16)": 6
+  },
+  "rank_pair_incidence_U2": 28,
+  "rank_sign_twisted_operator": 16,
+  "formula_residual_nonzero_entries": 0,
+  "formula_residual_max_abs": 0,
+  "direct_membership_residual_nonzero_entries": 0,
+  "direct_membership_residual_max_abs": 0,
+  "image_dimension_bound": "rank(A_sgn)=16 <= dim U_2=28 < dim M^(3)=56; A_sgn kills M^(3)/U_2 ~= S^(5,3)",
+  "runtime_seconds": 2.196,
+  "boundary": "Finite n=8,k=3 pure-plus mechanism only; no all-n full native B_n fingerprint theorem or classification theorem."
+}

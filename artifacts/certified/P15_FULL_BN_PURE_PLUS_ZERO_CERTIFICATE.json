@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "claim": "M_{(2.2.2.1.1 | empty)}(B~I_8(3,3)) = 0 in the rational S_8 Specht model",
+  "n": 8,
+  "k": 3,
+  "l": 3,
+  "lambda_plus": "2.2.2.1.1",
+  "lambda_minus": "empty",
+  "specht_dim": 28,
+  "nonzero_underlying_permutations": 102,
+  "layer_size": 480,
+  "weight_patterns": {
+    "(3, 3, 4)": 96,
+    "(4, 4, 16)": 6
+  },
+  "common_denominator_seen": 2160,
+  "max_abs_numerator_seen": 245,
+  "nonzero_entries": 0,
+  "relation_checks_pass": true,
+  "relation_checks": {
+    "s_i_squared": true,
+    "braid": true,
+    "distant_commute": true
+  },
+  "runtime_seconds": 6.822,
+  "boundary": "Finite exact pure-plus zero-block witness only; no full native B_n fingerprint theorem or classification theorem."
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below. Code is MIT-licensed; paper text and PDF artifacts are CC-BY-4.0 as specified in LICENSE."
+title: "Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer"
+type: software
+authors:
+  - family-names: Babanskyy
+    given-names: Oleksiy
+    orcid: "https://orcid.org/0009-0001-6176-6208"
+repository-code: "https://github.com/aconsciousfractal/Finite-Centered-Incidence-Geometry-Type-B-Signed-Reversal-Rank"
+license: MIT
+date-released: "2026-07-07"
+preferred-citation:
+  type: article
+  title: "Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer"
+  authors:
+    - family-names: Babanskyy
+      given-names: Oleksiy
+      orcid: "https://orcid.org/0009-0001-6176-6208"
+  year: 2026
+keywords:
+  - finite-incidence-geometry
+  - signed-permutations
+  - type-b
+  - reversal
+  - standard-representation
+  - certified-computation

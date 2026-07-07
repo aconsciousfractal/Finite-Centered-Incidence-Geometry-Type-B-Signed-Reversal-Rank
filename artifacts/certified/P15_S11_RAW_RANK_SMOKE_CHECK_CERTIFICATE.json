@@ -1,0 +1,250 @@
+{
+  "checks": [
+    {
+      "id": "raw_rank_smoke_cases",
+      "rows": [
+        {
+          "expected_pair_std": 1,
+          "expected_ref": 2,
+          "k": 1,
+          "layer_size": 2,
+          "n": 3,
+          "ok": true,
+          "rank_pair_std": 1,
+          "rank_ref": 2
+        },
+        {
+          "expected_pair_std": 1,
+          "expected_ref": 2,
+          "k": 1,
+          "layer_size": 40,
+          "n": 4,
+          "ok": true,
+          "rank_pair_std": 1,
+          "rank_ref": 2
+        },
+        {
+          "expected_pair_std": 1,
+          "expected_ref": 2,
+          "k": 2,
+          "layer_size": 2,
+          "n": 4,
+          "ok": true,
+          "rank_pair_std": 1,
+          "rank_ref": 2
+        },
+        {
+          "expected_pair_std": 2,
+          "expected_ref": 3,
+          "k": 1,
+          "layer_size": 364,
+          "n": 5,
+          "ok": true,
+          "rank_pair_std": 2,
+          "rank_ref": 3
+        },
+        {
+          "expected_pair_std": 2,
+          "expected_ref": 3,
+          "k": 2,
+          "layer_size": 42,
+          "n": 5,
+          "ok": true,
+          "rank_pair_std": 2,
+          "rank_ref": 3
+        },
+        {
+          "expected_pair_std": 2,
+          "expected_ref": 3,
+          "k": 3,
+          "layer_size": 2,
+          "n": 5,
+          "ok": true,
+          "rank_pair_std": 2,
+          "rank_ref": 3
+        },
+        {
+          "expected_pair_std": 2,
+          "expected_ref": 3,
+          "k": 1,
+          "layer_size": 4080,
+          "n": 6,
+          "ok": true,
+          "rank_pair_std": 2,
+          "rank_ref": 3
+        },
+        {
+          "expected_pair_std": 2,
+          "expected_ref": 3,
+          "k": 2,
+          "layer_size": 132,
+          "n": 6,
+          "ok": true,
+          "rank_pair_std": 2,
+          "rank_ref": 3
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "nonempty_predicate_small_replay",
+      "range": "n=2..6, k up to ceil(n/2)+boundary",
+      "rows": [
+        {
+          "expected_nonempty": false,
+          "k": 1,
+          "layer_size": 0,
+          "n": 2,
+          "observed_nonempty": false,
+          "ok": true
+        },
+        {
+          "expected_nonempty": false,
+          "k": 2,
+          "layer_size": 0,
+          "n": 2,
+          "observed_nonempty": false,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 1,
+          "layer_size": 2,
+          "n": 3,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": false,
+          "k": 2,
+          "layer_size": 0,
+          "n": 3,
+          "observed_nonempty": false,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 1,
+          "layer_size": 40,
+          "n": 4,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 2,
+          "layer_size": 2,
+          "n": 4,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": false,
+          "k": 3,
+          "layer_size": 0,
+          "n": 4,
+          "observed_nonempty": false,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 1,
+          "layer_size": 364,
+          "n": 5,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 2,
+          "layer_size": 42,
+          "n": 5,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 3,
+          "layer_size": 2,
+          "n": 5,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 1,
+          "layer_size": 4080,
+          "n": 6,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": true,
+          "k": 2,
+          "layer_size": 132,
+          "n": 6,
+          "observed_nonempty": true,
+          "ok": true
+        },
+        {
+          "expected_nonempty": false,
+          "k": 3,
+          "layer_size": 0,
+          "n": 6,
+          "observed_nonempty": false,
+          "ok": true
+        },
+        {
+          "expected_nonempty": false,
+          "k": 4,
+          "layer_size": 0,
+          "n": 6,
+          "observed_nonempty": false,
+          "ok": true
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "decision": "Bounded independent raw rank smoke check passes.",
+  "failed_checks": [],
+  "gate": "P15-S11 bounded raw rank smoke check",
+  "project": "P15 signed reversal rank theorem",
+  "rank_cases": [
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ]
+  ],
+  "schema": "p15.s11.raw_rank_smoke_check.v1",
+  "scope": "Small exact raw recompute only; not a proof engine and not a public theorem promotion.",
+  "status": "PASS"
+}

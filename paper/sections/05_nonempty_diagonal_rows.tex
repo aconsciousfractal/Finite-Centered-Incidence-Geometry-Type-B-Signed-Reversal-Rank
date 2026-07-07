@@ -1,0 +1,36 @@
+\section{Nonempty Diagonal Rows}\label{sec:nonempty}
+
+\begin{lemma}[Nonempty positive diagonal condition]\label{lem:nonempty}
+For the theorem range $k\ge1$, the diagonal layer $\BtildeI_n(k,k)$ is nonempty exactly as follows.
+If $n=2m$, then
+\[
+  1\le k<m, \quad\text{or}\quad k=m \text{ and } m \text{ is even}.
+\]
+If $n=2m+1$, then
+\[
+  1\le k\le m, \quad\text{or}\quad k=m+1 \text{ and } m \text{ is even}.
+\]
+The row $k=0$ is nonempty for every $n\ge2$, but it is outside the theorem statement.
+\end{lemma}
+
+\begin{proof}
+Prescribe two positive-hit sets: $F$ for fixed hits and $R$ for reversal hits.  Off the odd center, a valid partial
+prescription must assign at most one image to each domain and must have distinct prescribed images.  Thus a non-center
+position cannot simultaneously be a positive fixed hit and a positive reversal hit.
+
+For $n=2m$, this gives the upper bound $k\le m$, since the $k$ fixed-hit domains and $k$ reversal-hit domains are
+disjoint.  For $k<m$, construct examples by reversal-pair blocks.  If $k=2a$, choose $a$ reversal pairs to be fully
+fixed-positive and $a$ disjoint reversal pairs to be fully reversal-positive.  If $k=2a+1$, do the same for $2a$ hits
+and use two further reversal pairs: one supplies a single positive fixed hit and the other supplies a single positive
+reversal hit.  This uses $k$ pairs when $k$ is even and $k+1$ pairs when $k$ is odd, hence it is possible for every
+$k<m$.
+
+At the top row $k=m$, all non-center positions are prescribed.  If $I$ is the set of positions sent as fixed, the
+complement is sent as reversed.  Injectivity forces $I=\rho(I)$.  Hence $I$ is a union of reversal pairs and has even
+cardinality, so the top row exists exactly when $m$ is even.
+
+For $n=2m+1$, the center is fixed and reversed simultaneously.  Give the center positive sign to contribute one fixed
+hit and one reversal hit.  If $k=1$, use the empty non-center prescription; if $k>1$, apply the even
+$2m$ construction to the non-center positions with $k-1$ hits of each kind.  This gives exactly
+$1\le k\le m$, plus the top row $k=m+1$ when $m$ is even.
+\end{proof}

@@ -1,0 +1,78 @@
+\section[Odd Reference Channel: the Hm Residual]{Odd Reference Channel: the $H_m$ Residual}\label{sec:hm}
+
+For a polynomial $\sum_r h_r t^r$, write
+\[
+  \Phi_N\left(\sum_r h_r t^r\right)=\sum_r h_r 2^{N-r}(N-r)!.
+\]
+This is the signed-rook completion functional, a signed version of the classical rook-polynomial completion count \cite{KaplanskyRiordan1946}: after $r$ nonattacking special cells are selected in an $N$ by $N$ remaining board, the unmatched rows and columns can be completed by $2^{N-r}(N-r)!$ signed bijections.
+
+\begin{lemma}[$H_m$ is the odd $V_{\mathrm{ref}}$, $k=1$, residual]\label{lem:H}
+For $m\ge2$,
+\[
+  a(2m+1,1)=a(2m,1)+H_m.
+\]
+The edge value is $H_2=22$.  For $m\ge3$, put
+\[
+  A(t)=1-4t+2t^2
+\]
+and
+\[
+  P_m(t)=(2m-2)(2t-1)(2m t^3-(4m+2)t^2+(2m+2)t-1)-A(t)^2.
+\]
+Then
+\[
+  H_m=\Phi_{2m-1}\left((1-t)A(t)^{m-3}P_m(t)\right).
+\]
+\end{lemma}
+
+\begin{proof}
+The odd reference operator splits the center coordinate from the non-center reversal pairs:
+\[
+  M_{\mathrm{ref}}=2aP_+^{\mathrm{pairs}}+a_cE_{\mathrm{center}}.
+\]
+In the $k=1$ row, the trace identity isolates the non-center scalar as
+\[
+  (2m)a(2m+1,1)=(2m)a(2m,1)+C_m,
+\]
+where $C_m$ is the center-nonfixed correction.  It remains to compute $C_m$.
+
+Force a non-center source and insert the odd center into one functional edge.  The center split gives one fixed target,
+one reversal target, and $2m-2$ ordinary targets.  After the forced edge is removed, the remaining board has
+$2m-1$ rows and columns, so its signed-rook expansion is evaluated by $\Phi_{2m-1}$.  The free non-center reversal
+pairs contribute the factor $A(t)$, and the two local insertion alternatives give
+\[
+H_m=(2m-2)L_m-B_m,
+\]
+with
+\[
+B_m=\Phi_{2m-1}\left((1-t)A(t)^{m-1}\right),
+\]
+\[
+L_m=\Phi_{2m-1}\left((1-t)(2t-1)A(t)^{m-3}
+      (2m t^3-(4m+2)t^2+(2m+2)t-1)\right).
+\]
+Combining these two expressions gives the stated polynomial $P_m(t)$ and $C_m=2mH_m$.
+
+The only nonlocal algebra in the derivation is the equality between the expanded edge-insertion count and the compact
+$\Phi_{2m-1}$ expression.  This is not a finite extrapolation step.  The certificate
+\path{P15_S11A_H_TRUE_SCALAR_EDGE_INSERTION_VERIFIER}, routed in Appendix~\ref{app:certs}, checks the local signed-rook
+edge factors, the transfer from the expanded expression to the displayed univariate target, and the following all-$m$
+annihilation.
+
+After the small edge rows $m=2,3,4$ are checked directly, the symbolic residual has the form
+\[
+  E_z\bigl(\mathrm{local}-(2m-2)R_m\bigr)=A(s)^{m-5}Q_m(s),\qquad m\ge5,
+\]
+where $E_z(F)=F(1,s)-\partial_zF(1,s)$.  Under the moment substitution $s=1/(2x)$, applying
+integration by parts to
+\[
+  I_j=\int_0^\infty e^{-x}(2x^2-4x+1)^{m-5}x^j\,dx
+\]
+gives the recurrence
+\[
+ j I_{j-1}+(-4j-4m+15)I_j+(2j+4m-12)I_{j+1}-2I_{j+2}=-\delta_{j0}.
+\]
+The verifier rewrites the transformed residual with this recurrence until only the basis $I_0,I_1,1$ remains, and all
+three coefficients are identically zero in $\mathbb Z[m]$.  Hence the displayed formula is the true scalar residual for
+every $m\ge2$.
+\end{proof}

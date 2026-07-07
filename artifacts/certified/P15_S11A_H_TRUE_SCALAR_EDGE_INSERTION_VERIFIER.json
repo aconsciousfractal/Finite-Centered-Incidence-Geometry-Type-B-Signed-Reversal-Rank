@@ -1,0 +1,589 @@
+{
+  "checks": [
+    {
+      "id": "free_pair_constant_transfer_Az",
+      "meaning": "Coefficient [u^0 v^0] of a full free reversal pair is Az=1+(2z-6)s+(z^2-4z+5)s^2.",
+      "residual_terms": [],
+      "status": "PASS"
+    },
+    {
+      "formulas": {
+        "fixed": "[uv] singleton_fixed * full_pair^(m-1)",
+        "ordinary": "[uv] hook^2 * full_pair^(m-2)",
+        "per_source_weight": "4*(fixed + reversal + (2m-2)*ordinary)",
+        "reversal": "[uv] singleton_reversal * full_pair^(m-1)"
+      },
+      "id": "forced_edge_class_formulas",
+      "meaning": "The center split gives one fixed target, one reversal target, and 2m-2 ordinary targets per source; local factors are singleton fixed, singleton reversal, and two hooks.",
+      "status": "PASS"
+    },
+    {
+      "id": "direct_small_edge_rows_m2_m4",
+      "meaning": "Direct exact edge rows close the m=2,3,4 cases outside the A^(m-5) kernel range.",
+      "rows": [
+        {
+          "compact_phi": 40,
+          "local_phi": 40,
+          "m": 2,
+          "match": true
+        },
+        {
+          "compact_phi": 4416,
+          "local_phi": 4416,
+          "m": 3,
+          "match": true
+        },
+        {
+          "compact_phi": 979488,
+          "local_phi": 979488,
+          "m": 4,
+          "match": true
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "edge_insertion_vs_agent1_phi_smoke",
+      "meaning": "Diagnostic exact rows for the complete local-vs-compact equality; proof is supplied by the small rows plus moment reduction.",
+      "rows": [
+        {
+          "m": 2,
+          "match": true,
+          "per_source_compact_phi": 40,
+          "per_source_local_phi": 40
+        },
+        {
+          "m": 3,
+          "match": true,
+          "per_source_compact_phi": 4416,
+          "per_source_local_phi": 4416
+        },
+        {
+          "m": 4,
+          "match": true,
+          "per_source_compact_phi": 979488,
+          "per_source_local_phi": 979488
+        },
+        {
+          "m": 5,
+          "match": true,
+          "per_source_compact_phi": 350283776,
+          "per_source_local_phi": 350283776
+        },
+        {
+          "m": 6,
+          "match": true,
+          "per_source_compact_phi": 184173302400,
+          "per_source_local_phi": 184173302400
+        },
+        {
+          "m": 7,
+          "match": true,
+          "per_source_compact_phi": 133684085376000,
+          "per_source_local_phi": 133684085376000
+        },
+        {
+          "m": 8,
+          "match": true,
+          "per_source_compact_phi": 128056350143529472,
+          "per_source_local_phi": 128056350143529472
+        },
+        {
+          "m": 9,
+          "match": true,
+          "per_source_compact_phi": 156475697773844791296,
+          "per_source_local_phi": 156475697773844791296
+        },
+        {
+          "m": 10,
+          "match": true,
+          "per_source_compact_phi": 237521533000120266074112,
+          "per_source_local_phi": 237521533000120266074112
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "compact_difference_kernel_residual_Q",
+      "matches_expected_terms": true,
+      "meaning": "Over Z[m,s], E_z(local-(2m-2)R_m)=A(s)^(m-5)Q_m(s) for m>=5.",
+      "q_degrees": {
+        "m": 4,
+        "s": 9,
+        "terms": 43
+      },
+      "q_terms": [
+        {
+          "coefficient": 2,
+          "m_degree": 0,
+          "s_degree": 0
+        },
+        {
+          "coefficient": -2,
+          "m_degree": 1,
+          "s_degree": 0
+        },
+        {
+          "coefficient": -26,
+          "m_degree": 0,
+          "s_degree": 1
+        },
+        {
+          "coefficient": 22,
+          "m_degree": 1,
+          "s_degree": 1
+        },
+        {
+          "coefficient": 4,
+          "m_degree": 2,
+          "s_degree": 1
+        },
+        {
+          "coefficient": 108,
+          "m_degree": 0,
+          "s_degree": 2
+        },
+        {
+          "coefficient": 8,
+          "m_degree": 1,
+          "s_degree": 2
+        },
+        {
+          "coefficient": -148,
+          "m_degree": 2,
+          "s_degree": 2
+        },
+        {
+          "coefficient": 32,
+          "m_degree": 3,
+          "s_degree": 2
+        },
+        {
+          "coefficient": -420,
+          "m_degree": 0,
+          "s_degree": 3
+        },
+        {
+          "coefficient": 32,
+          "m_degree": 1,
+          "s_degree": 3
+        },
+        {
+          "coefficient": 420,
+          "m_degree": 2,
+          "s_degree": 3
+        },
+        {
+          "coefficient": 32,
+          "m_degree": 3,
+          "s_degree": 3
+        },
+        {
+          "coefficient": -64,
+          "m_degree": 4,
+          "s_degree": 3
+        },
+        {
+          "coefficient": 832,
+          "m_degree": 0,
+          "s_degree": 4
+        },
+        {
+          "coefficient": -212,
+          "m_degree": 1,
+          "s_degree": 4
+        },
+        {
+          "coefficient": -172,
+          "m_degree": 2,
+          "s_degree": 4
+        },
+        {
+          "coefficient": -896,
+          "m_degree": 3,
+          "s_degree": 4
+        },
+        {
+          "coefficient": 448,
+          "m_degree": 4,
+          "s_degree": 4
+        },
+        {
+          "coefficient": -904,
+          "m_degree": 0,
+          "s_degree": 5
+        },
+        {
+          "coefficient": 432,
+          "m_degree": 1,
+          "s_degree": 5
+        },
+        {
+          "coefficient": -1128,
+          "m_degree": 2,
+          "s_degree": 5
+        },
+        {
+          "coefficient": 2816,
+          "m_degree": 3,
+          "s_degree": 5
+        },
+        {
+          "coefficient": -1216,
+          "m_degree": 4,
+          "s_degree": 5
+        },
+        {
+          "coefficient": 816,
+          "m_degree": 0,
+          "s_degree": 6
+        },
+        {
+          "coefficient": -1072,
+          "m_degree": 1,
+          "s_degree": 6
+        },
+        {
+          "coefficient": 2624,
+          "m_degree": 2,
+          "s_degree": 6
+        },
+        {
+          "coefficient": -3968,
+          "m_degree": 3,
+          "s_degree": 6
+        },
+        {
+          "coefficient": 1600,
+          "m_degree": 4,
+          "s_degree": 6
+        },
+        {
+          "coefficient": -816,
+          "m_degree": 0,
+          "s_degree": 7
+        },
+        {
+          "coefficient": 1536,
+          "m_degree": 1,
+          "s_degree": 7
+        },
+        {
+          "coefficient": -2320,
+          "m_degree": 2,
+          "s_degree": 7
+        },
+        {
+          "coefficient": 2624,
+          "m_degree": 3,
+          "s_degree": 7
+        },
+        {
+          "coefficient": -1024,
+          "m_degree": 4,
+          "s_degree": 7
+        },
+        {
+          "coefficient": 416,
+          "m_degree": 0,
+          "s_degree": 8
+        },
+        {
+          "coefficient": -560,
+          "m_degree": 1,
+          "s_degree": 8
+        },
+        {
+          "coefficient": 400,
+          "m_degree": 2,
+          "s_degree": 8
+        },
+        {
+          "coefficient": -512,
+          "m_degree": 3,
+          "s_degree": 8
+        },
+        {
+          "coefficient": 256,
+          "m_degree": 4,
+          "s_degree": 8
+        },
+        {
+          "coefficient": 64,
+          "m_degree": 0,
+          "s_degree": 9
+        },
+        {
+          "coefficient": -288,
+          "m_degree": 1,
+          "s_degree": 9
+        },
+        {
+          "coefficient": 352,
+          "m_degree": 2,
+          "s_degree": 9
+        },
+        {
+          "coefficient": -128,
+          "m_degree": 3,
+          "s_degree": 9
+        }
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "phi_kernel_moment_reduction",
+      "meaning": "Integration-by-parts moment recurrence reduces Phi_{2m-1}(A^(m-5)Q_m) to zero for all m>=5.",
+      "moment_relation": "j I_{j-1}+(-4j-4m+15)I_j+(2j+4m-12)I_{j+1}-2I_{j+2}=-delta_{j0}",
+      "reduced_I0_terms": [],
+      "reduced_I1_terms": [],
+      "reduced_constant_terms": [],
+      "status": "PASS",
+      "transformed_R_terms": [
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 1024,
+              "m_degree": 0
+            },
+            {
+              "coefficient": -1024,
+              "m_degree": 1
+            }
+          ],
+          "x_degree": 9
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": -6656,
+              "m_degree": 0
+            },
+            {
+              "coefficient": 5632,
+              "m_degree": 1
+            },
+            {
+              "coefficient": 1024,
+              "m_degree": 2
+            }
+          ],
+          "x_degree": 8
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 13824,
+              "m_degree": 0
+            },
+            {
+              "coefficient": 1024,
+              "m_degree": 1
+            },
+            {
+              "coefficient": -18944,
+              "m_degree": 2
+            },
+            {
+              "coefficient": 4096,
+              "m_degree": 3
+            }
+          ],
+          "x_degree": 7
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": -26880,
+              "m_degree": 0
+            },
+            {
+              "coefficient": 2048,
+              "m_degree": 1
+            },
+            {
+              "coefficient": 26880,
+              "m_degree": 2
+            },
+            {
+              "coefficient": 2048,
+              "m_degree": 3
+            },
+            {
+              "coefficient": -4096,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 6
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 26624,
+              "m_degree": 0
+            },
+            {
+              "coefficient": -6784,
+              "m_degree": 1
+            },
+            {
+              "coefficient": -5504,
+              "m_degree": 2
+            },
+            {
+              "coefficient": -28672,
+              "m_degree": 3
+            },
+            {
+              "coefficient": 14336,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 5
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": -14464,
+              "m_degree": 0
+            },
+            {
+              "coefficient": 6912,
+              "m_degree": 1
+            },
+            {
+              "coefficient": -18048,
+              "m_degree": 2
+            },
+            {
+              "coefficient": 45056,
+              "m_degree": 3
+            },
+            {
+              "coefficient": -19456,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 4
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 6528,
+              "m_degree": 0
+            },
+            {
+              "coefficient": -8576,
+              "m_degree": 1
+            },
+            {
+              "coefficient": 20992,
+              "m_degree": 2
+            },
+            {
+              "coefficient": -31744,
+              "m_degree": 3
+            },
+            {
+              "coefficient": 12800,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 3
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": -3264,
+              "m_degree": 0
+            },
+            {
+              "coefficient": 6144,
+              "m_degree": 1
+            },
+            {
+              "coefficient": -9280,
+              "m_degree": 2
+            },
+            {
+              "coefficient": 10496,
+              "m_degree": 3
+            },
+            {
+              "coefficient": -4096,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 2
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 832,
+              "m_degree": 0
+            },
+            {
+              "coefficient": -1120,
+              "m_degree": 1
+            },
+            {
+              "coefficient": 800,
+              "m_degree": 2
+            },
+            {
+              "coefficient": -1024,
+              "m_degree": 3
+            },
+            {
+              "coefficient": 512,
+              "m_degree": 4
+            }
+          ],
+          "x_degree": 1
+        },
+        {
+          "coefficient_terms": [
+            {
+              "coefficient": 64,
+              "m_degree": 0
+            },
+            {
+              "coefficient": -288,
+              "m_degree": 1
+            },
+            {
+              "coefficient": 352,
+              "m_degree": 2
+            },
+            {
+              "coefficient": -128,
+              "m_degree": 3
+            }
+          ],
+          "x_degree": 0
+        }
+      ]
+    }
+  ],
+  "closed_by_this_script": [
+    "Local signed-rook factors for the true center-nonfixed odd V_ref k=1 contribution.",
+    "All-m symbolic extraction of the residual between the true edge-insertion expression and the compact Agent-1 R_m expression.",
+    "Phi-kernel identity for m>=5 by exact moment recurrences.",
+    "Direct exact edge rows for m=2,3,4."
+  ],
+  "decision": "S11A-H passes: true center-nonfixed edge-insertion local algebra is certified, small edge rows are exact, and the all-m Phi-kernel is proven by moment integration by parts.",
+  "downstream_status": [
+    "S11A-K is now closed by the global product/Phi certificate; no S11A scalar-link gate remains open."
+  ],
+  "failed_checks": [],
+  "gate": "P15-S11A-H true-scalar edge-insertion verifier",
+  "no_go_rules_obeyed": {
+    "no_formula_sequence_used_as_independent_true_scalar_check": true,
+    "no_held_out_extension_as_proof": true,
+    "no_symbolic_search_in_verifier": true
+  },
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s11a.h_true_scalar_edge_insertion.v1",
+  "status": "PASS",
+  "still_open": []
+}

@@ -1,0 +1,17 @@
+\section{Proof Assembly}\label{sec:assembly}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The nonempty rows are exactly those of Lemma~\ref{lem:nonempty}.  For even $n$, Lemma~\ref{lem:even} gives the required
+collapse, positivity, and ranks.
+
+For odd $n=2m+1$, Lemma~\ref{lem:oddreduction} reduces all nonempty rows with $k\ge2$ to the even positive inputs and
+center trace identities.  In the reference channel, the remaining $k=1$ scalar is $a(2m,1)+H_m$.
+Lemma~\ref{lem:H} identifies $H_m$ with the true center-nonfixed residual, and Lemma~\ref{lem:positivity} gives
+$H_m>0$.
+
+In the pair-standard channel, the residual $k=1$ eigenvalue is $\lambda'$, equivalently $K_m=(m-1)\lambda'$.
+Lemma~\ref{lem:K} identifies this formula sequence with the true pair-standard scalar, and
+Lemma~\ref{lem:positivity} gives $K_m>0$.  Thus both ambient standard-channel operators are nonzero scalar multiples of
+their classical matching-scheme idempotent components.  Their ranks are therefore $\lceil n/2\rceil$ and
+$\lceil n/2\rceil-1$.
+\end{proof}

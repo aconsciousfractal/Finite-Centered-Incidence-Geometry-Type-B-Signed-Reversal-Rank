@@ -1,0 +1,75 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer
+%% Author: Oleksiy Babanskyy
+%% Public release manuscript source.
+%% Build target: pdflatex, bibtex, pdflatex, pdflatex.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,a4paper]{article}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+\pdftrailerid{}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,array,geometry,longtable,placeins}
+\geometry{margin=2.5cm}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\Urlmuskip=0mu plus 2mu\relax
+\setlength{\emergencystretch}{3em}
+\urlstyle{tt}
+
+\input{macros}
+
+\hypersetup{
+  pdftitle={Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer},
+  pdfauthor={Oleksiy Babanskyy},
+  pdfsubject={signed permutations, reversal incidence layers, matching schemes},
+  pdfkeywords={signed permutations, hyperoctahedral group, reversal incidence layers, association schemes, rook polynomials, signed posets}
+}
+
+\title{Exact Standard-Channel Rank of a Signed-Reversal Incidence Layer}
+\author{Oleksiy Babanskyy}
+\date{}
+
+\begin{document}
+\pagestyle{plain}
+\maketitle
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\smallskip
+\noindent\textbf{Keywords:} signed permutations; hyperoctahedral group; reversal incidence layers; association schemes; rook polynomials; signed posets.
+
+\smallskip
+\noindent\textbf{MSC 2020:} 05A05; 05A15; 05E18; 20B30; 20C30.
+
+\input{sections/01_introduction}
+\input{sections/02_definitions_main_statement}
+\input{sections/03_positive_separator}
+\input{sections/04_matching_scheme_background}
+\input{sections/05_nonempty_diagonal_rows}
+\input{sections/06_odd_reference_residual}
+\input{sections/07_odd_pair_standard_residual}
+\input{sections/08_ratio_induction_positivity}
+\input{sections/09_proof_assembly}
+\input{sections/10_boundaries_outlook}
+
+\appendix
+\input{appendices/A_computational_certificates}
+\FloatBarrier
+\input{appendices/B_finite_native_b_fingerprint_boundary}
+
+\section*{Data and Code Availability}
+The companion repository contains the LaTeX source, deterministic replay scripts, certified JSON/Markdown artifacts, finite atlas inputs used by the appendix, and a SHA-256 manifest for the public package. The scripts replay the finite checks and exact polynomial identities referenced in Appendix~A; the theorem statements are the statements proved in this manuscript.
+
+\bibliographystyle{alpha}
+\bibliography{refs}
+
+\end{document}

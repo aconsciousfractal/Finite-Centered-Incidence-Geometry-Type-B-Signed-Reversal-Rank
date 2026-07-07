@@ -1,0 +1,77 @@
+\section[Finite Native Bn Fingerprint Boundary]{Finite Native $B_n$ Fingerprint Boundary}\label{app:fullfingerprint}
+
+The main theorem of this paper is not a full native $B_n$ Fourier fingerprint theorem.  We nevertheless record one
+finite boundary computation because it is useful for interpretation: the naive expectation that every native irreducible
+block saturates the $R=+$ bound already fails at $n=8$.
+
+All statements in this appendix section are finite statements for the displayed $n=8$ atlas.  They do not imply an
+all-$n$ classification, an all-irrep saturation theorem, or a general Johnson-scheme vanishing theorem.  The external
+$n=8,k\ge2$ defect census contains $41$ fixed-plus family-instances and $114$ defect rows.  The currently certified
+accounting covers $6$ family-instances and $44$ rows, leaving $35$ family-instances and $70$ rows open.
+
+\begin{center}
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{c|r|r|r|r|r|r}
+\textbf{Slice} & \textbf{fam.} & \textbf{rows} & \textbf{acct. fam.} & \textbf{acct. rows} & \textbf{open fam.} & \textbf{open rows}\\
+\hline
+$n=8,k=2$ & 5 & 20 & 1 & 15 & 4 & 5\\
+$n=8,k=3$ & 36 & 94 & 5 & 29 & 31 & 65\\
+\hline
+total & 41 & 114 & 6 & 44 & 35 & 70
+\end{tabular}
+\endgroup
+\end{center}
+
+The accounted family-instances are
+\begin{align*}
+(n,k,\lambda^+)\in\{&(8,2,(1)),\ (8,3,(1,1)),\ (8,3,(2)),\\
+&(8,3,(4)),\ (8,3,(4,1)),\ (8,3,(2,2,2,1,1))\}.
+\end{align*}
+The phrase ``accounted'' here means finite exact certificate or finite quotient-layer accounting, not an all-$n$ theorem.
+
+\begin{proposition}[Pre-Specht cancellation for the $(1,1)$ zero family]\label{prop:lambda11zero}
+For $X=\BtildeI_8(3,3)$ and every partition $\nu\vdash6$,
+\[
+  M_{(1,1)\mid\nu}(X)=0.
+\]
+\end{proposition}
+
+\begin{proof}[Certified proof sketch]
+Before applying a complement Specht module, the fixed-plus block with $\lambda^+=(1,1)$ is a matrix over the group
+algebra $\mathbb Q[S_6]$.  The exact certificate groups the $192$ active signed terms into $96$ group-algebra keys.
+For every key there are two surviving completions with the same complement permutation and opposite $S_2$ sign; their
+coefficients are $-4$ and $4$.  Thus all $96$ keys vanish already in $\mathbb Q[S_6]$.  Applying any representation
+$S^\nu$, $\nu\vdash6$, preserves zero.
+\end{proof}
+
+\begin{proposition}[Pure-plus Johnson degree-drop]\label{prop:purepluszero}
+For $X=\BtildeI_8(3,3)$,
+\[
+  M_{(2,2,2,1,1)\mid\varnothing}(X)=0.
+\]
+\end{proposition}
+
+\begin{proof}[Certified proof sketch]
+The conjugate partition of $(2,2,2,1,1)$ is $(5,3)$, so
+\[
+  S^{(2,2,2,1,1)} \cong S^{(5,3)}\otimes\operatorname{sgn}.
+\]
+After the corresponding sign twist, the certified operator $A_{\operatorname{sgn}}$ acts on the $3$-subset permutation
+module $M^{(3)}$.  Let $U_2$ be the pair-incidence submodule spanned by the vectors $v_P$ of $3$-subsets containing a
+fixed pair $P$.  The Johnson certificate verifies the exact containment
+\[
+  A_{\operatorname{sgn}}(M^{(3)})\subseteq U_2.
+\]
+Since the top quotient $M^{(3)}/U_2$ is isomorphic to $S^{(5,3)}$, the sign-twisted operator kills this quotient.
+Untwisting by the sign representation gives the displayed pure-plus zero.  An independent direct rational seminormal
+Specht computation also gives zero entries throughout the $28$-dimensional block.
+\end{proof}
+
+\begin{remark}[Appendix boundary]
+The finite zero mechanisms above explain all twelve zero rows under the $n=8,k=3$ atlas census: eleven rows from
+Proposition~\ref{prop:lambda11zero} and one row from Proposition~\ref{prop:purepluszero}.  Other certified finite
+packages account for selected nonzero extra-defect families, including $T_1^{(8,2)}$, $T_2^{(8,3)}$, $T_4^{(8,3)}$, and
+$\lambda^+=(4,1)$ at $n=8,k=3$.  The remaining extra-defect rows are not classified here.
+\end{remark}

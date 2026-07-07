@@ -1,0 +1,111 @@
+{
+  "checks": [
+    {
+      "id": "dependency_verifiers_pass",
+      "k_bivariate_to_L_status": "PASS",
+      "local_failed_checks": [],
+      "local_true_to_bivariate_status": "PASS",
+      "s9c_failed_checks": [],
+      "s9c_recurrence_positivity_status": "PASS",
+      "status": "PASS",
+      "transfer_failed_checks": []
+    },
+    {
+      "block_cols": "1(center)+1(distinguished singleton)+2(m-1)(free pairs)",
+      "block_rows": "1(center)+1(distinguished singleton)+2(m-1)(free pairs)",
+      "cols_total": "2m",
+      "expected": "2m",
+      "free_pair_exponent": "m-1",
+      "id": "same_pair_product_accounting",
+      "identity": "c * a^(m-1) * same",
+      "rows_total": "2m",
+      "status": "PASS",
+      "valid_for_m_ge": 2
+    },
+    {
+      "block_cols": "1(center)+1(source hook)+2(target hook)+2(m-2)(free pairs)",
+      "block_rows": "1(center)+2(source hook)+1(target hook)+2(m-2)(free pairs)",
+      "cols_total": "2m",
+      "expected": "2m",
+      "forced_weight_reason": "ordinary forced sign weight 2 times lambda coefficient -2 gives the subtracted magnitude 4",
+      "free_pair_exponent": "m-2",
+      "id": "generic_pair_product_accounting",
+      "identity": "c * a^(m-2) * generic, with generic=4*h^2",
+      "rows_total": "2m",
+      "status": "PASS",
+      "valid_for_m_ge": 2
+    },
+    {
+      "completion_rule": "a coefficient h_r for r nonattacking selected special cells contributes h_r*2^(2m-r)*(2m-r)!",
+      "forced_assignments_per_entry": 1,
+      "functional": "Phi_{2m}(sum h_r t^r)=sum h_r 2^(2m-r)(2m-r)!",
+      "id": "phi_2m_completion_functional",
+      "odd_size": "2m+1",
+      "phi_index": "2m",
+      "remaining_rows_cols": "2m",
+      "status": "PASS"
+    },
+    {
+      "id": "edge_policy_m1_m2_m3",
+      "meaning": "The global bivariate product has no negative exponent for m>=2; B(t)^(m-4)L_m(t) is only invoked from m>=4, with m=2,3 handled by exact rows in S9C.",
+      "rows": [
+        {
+          "m": 1,
+          "reason": "pair-standard lambda_prime eigenspace has multiplicity m-1=0",
+          "status": "excluded"
+        },
+        {
+          "generic_exp": 0,
+          "m": 2,
+          "same_exp": 1,
+          "status": "direct/bivariate",
+          "univariate_L_used": false
+        },
+        {
+          "generic_exp": 1,
+          "m": 3,
+          "same_exp": 2,
+          "status": "direct/bivariate",
+          "univariate_L_used": false
+        },
+        {
+          "generic_exp": 2,
+          "m": 4,
+          "same_exp": 3,
+          "status": "univariate_start",
+          "univariate_L_used": true
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "closed_by_this_certificate": [
+    "All-m product over independent non-center reversal-pair blocks for S11A-K.",
+    "Phi_{2m} completion functional for one forced entry in odd size 2m+1.",
+    "Edge policy m=1 excluded, m=2,3 direct/bivariate, m>=4 univariate transfer."
+  ],
+  "decision": "S11A-K global product/Phi assembly is certified: the true lambda_prime entry formula gives the S9 bivariate target for all m>=2; together with transfer and S9C this closes the pair-standard k=1 scalar link.",
+  "downstream_chain": [
+    "P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER: local true entry factors pass.",
+    "P15_S11A_SCALAR_LINK_SYMBOLIC_VERIFIER: S9 bivariate target collapses to B(t)^(m-4)L_m(t).",
+    "P15_S9C_KM_RECURRENCE_CERTIFICATE: displayed K_m formula sequence is positive for all m>=2."
+  ],
+  "factor_definitions": {
+    "X": "u-1",
+    "Y": "v-1",
+    "Z": "uv-1",
+    "a": "1+2t(X+Y)+t^2(X^2+Y^2)",
+    "c": "1+tZ",
+    "generic": "4h^2",
+    "h": "1+t(X+Y)",
+    "same": "(1+u)sx+(1+v)sy",
+    "sx": "1+tX",
+    "sy": "1+tY"
+  },
+  "failed_checks": [],
+  "formula": "lambda_prime(2m+1,1)=[uv]Phi_{2m}(c*(a^(m-1)*same-a^(m-2)*generic))",
+  "gate": "P15-S11A-K global product/Phi certificate",
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s11a.k_global_product_phi.v1",
+  "status": "PASS"
+}

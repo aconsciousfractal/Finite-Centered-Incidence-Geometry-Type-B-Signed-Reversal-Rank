@@ -1,0 +1,90 @@
+{
+  "checks": [
+    {
+      "id": "free_reversal_pair_transfer_a",
+      "interpretation": "A free non-center reversal pair has two fixed and two reversal special cells.",
+      "local_degrees": {
+        "t": 2,
+        "terms": 9,
+        "u": 2,
+        "v": 2
+      },
+      "residual_terms": [],
+      "status": "PASS"
+    },
+    {
+      "id": "odd_center_transfer_c",
+      "interpretation": "The odd center is simultaneously fixed and reversed, with excess uv-1.",
+      "local_degrees": {
+        "t": 1,
+        "terms": 3,
+        "u": 1,
+        "v": 1
+      },
+      "residual_terms": [],
+      "status": "PASS"
+    },
+    {
+      "id": "same_pair_forced_Mii_plus_Mrhoi_i",
+      "interpretation": "Forcing i->i has signed weight 1+u and leaves a fixed singleton; forcing i->rho(i) has weight 1+v and leaves a reversal singleton.",
+      "local_degrees": {
+        "t": 1,
+        "terms": 6,
+        "u": 2,
+        "v": 2
+      },
+      "residual_terms": [],
+      "status": "PASS"
+    },
+    {
+      "id": "generic_forced_minus_2_Mji_term",
+      "interpretation": "The -2 generic entry term has forced ordinary sign weight 2 and two hook transfers, giving 4*h^2.",
+      "local_degrees": {
+        "t": 2,
+        "terms": 10,
+        "u": 2,
+        "v": 2
+      },
+      "residual_terms": [],
+      "status": "PASS"
+    },
+    {
+      "generic_degrees": {
+        "t": 2,
+        "terms": 10,
+        "u": 2,
+        "v": 2
+      },
+      "id": "lambda_prime_true_entry_shape",
+      "identity": "lambda_prime = same-pair forced contribution - 2*generic forced contribution; globally c*(a^(m-1)*same - a^(m-2)*generic).",
+      "residual_generic_terms": [],
+      "residual_same_terms": [],
+      "same_pair_degrees": {
+        "t": 1,
+        "terms": 6,
+        "u": 2,
+        "v": 2
+      },
+      "status": "PASS"
+    }
+  ],
+  "closed_by_this_script": [
+    "Local true M_pair entry factors for odd pair-standard k=1.",
+    "Assembly shape of the S9 bivariate target from lambda_prime=M[i,i]+M[rho(i),i]-2*M[j,i]."
+  ],
+  "closed_downstream": [
+    "The standard product over independent non-center reversal pairs and the Phi_{2m} factorial functional are now closed by P15_S11A_K_GLOBAL_PRODUCT_PHI_CERTIFICATE."
+  ],
+  "decision": "Local signed-rook factors for the true odd pair-standard k=1 scalar match the S9 bivariate target. Together with the S11A transfer verifier and the S11A-K global product/Phi certificate, this closes the S11A-K scalar link.",
+  "failed_checks": [],
+  "gate": "P15-S11A-K true-scalar to bivariate local verifier",
+  "global_formula": "lambda_prime(2m+1,1)=[uv] Phi_{2m}( c*(a^(m-1)*same - a^(m-2)*generic) ), with generic=4*h^2.",
+  "no_go_rules_obeyed": {
+    "does_not_use_K_formula_sequence_as_true_scalar_check": true,
+    "no_held_out_extension": true,
+    "no_symbolic_search": true
+  },
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s11a.k_true_scalar_bivariate_local.v1",
+  "status": "PASS"
+}

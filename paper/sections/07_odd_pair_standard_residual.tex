@@ -1,0 +1,70 @@
+\section[Odd Pair-Standard Channel: the Km Residual]{Odd Pair-Standard Channel: the $K_m$ Residual}\label{sec:km}
+
+\begin{lemma}[$K_m$ is the odd pair-standard, $k=1$, residual]\label{lem:K}
+For odd $n=2m+1$, set
+\[
+  K_m=(m-1)\lambda'(2m+1,1).
+\]
+The edge values are $K_2=28$ and $K_3=14640$.  For $m\ge4$, define
+\[
+  B(t)=2t^2-4t+1
+\]
+and
+\begin{align*}
+L_m(t)={}&2(2m-3)t+2(-4m^2-8m+19)t^2+2(24m^2+18m-68)t^3 \\
+&+2(-56m^2-24m+122)t^4+2(56m^2+24m-92)t^5 \\
+&+2(-12m^2-44m+12)t^6+2(-16m^2+56m)t^7+2(8m^2-24m+8)t^8.
+\end{align*}
+Then
+\[
+  \lambda'(2m+1,1)=\Phi_{2m}\left(B(t)^{m-4}L_m(t)\right),
+\]
+and therefore
+\[
+  K_m=(m-1)\Phi_{2m}\left(B(t)^{m-4}L_m(t)\right).
+\]
+\end{lemma}
+
+\begin{proof}
+The odd pair-standard channel has two scalar pieces, $\mu$ and $\lambda'$.  The identity
+$\mu=a_c+4a_{\mathrm{even}}$ and the trace relation close every nonempty odd row with $k\ge2$.  Thus only the
+$k=1$ scalar $\lambda'$ remains.
+
+Choose a distinguished non-center reversal pair and the odd center.  Let $j$ be a generic source outside that pair and outside the center.  On the non-center pair-standard line,
+\[
+  \lambda'=M_{\mathrm{pair}}[i,i]+M_{\mathrm{pair}}[\rho(i),i]-2M_{\mathrm{pair}}[j,i].
+\]
+Put $X=u-1$, $Y=v-1$, and $Z=uv-1$, and define
+\[
+ a=1+2t(X+Y)+t^2(X^2+Y^2),\qquad c=1+tZ,
+\]
+\[
+ sx=1+tX,\qquad sy=1+tY,\qquad h=1+t(X+Y),
+\]
+\[
+ same=(1+u)sx+(1+v)sy,\qquad generic=4h^2.
+\]
+For the two same-pair entries, the forced edge lies inside the distinguished reversal pair.  The center contributes
+$c$, the unused mate contributes $sx$ or $sy$, and the other $m-1$ non-center reversal pairs contribute $a$; the two
+forced signs have weights $1+u$ and $1+v$.  This gives $c a^{m-1}same$.
+
+For the generic entry, the forced ordinary edge touches two non-center reversal pairs.  Those two pairs leave two hook
+factors, giving $h^2$; the forced ordinary sign contributes $2$, and the coefficient $-2$ in $\lambda'$ gives the
+subtracted factor $generic=4h^2$.  The center again contributes $c$, and the remaining $m-2$ reversal pairs contribute
+$a^{m-2}$.  Since these row and column sets are disjoint, the rook polynomial is the product of the block factors.
+Therefore, for every $m\ge2$,
+\[
+ \lambda'(2m+1,1)=[uv]\,\Phi_{2m}\left(c\left(a^{m-1}same-a^{m-2}generic\right)\right).
+\]
+A forced entry leaves $2m$ rows and columns, so the completion functional is $\Phi_{2m}$.
+
+The case $m=1$ has no pair-standard quotient.  For $m=2,3$, the product formula has nonnegative exponents but the
+univariate $B(t)^{m-4}L_m(t)$ presentation is not used; these are the direct edge rows $K_2=28$ and $K_3=14640$.
+For $m\ge4$, coefficient extraction over $\mathbb Z[m,t]$ reduces the bivariate product above to
+$B(t)^{m-4}L_m(t)$.  The public certificate route is split into three exact checks listed in
+Appendix~\ref{app:certs}: \path{P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER} checks the local true-entry factors,
+\path{P15_S11A_K_GLOBAL_PRODUCT_PHI_CERTIFICATE} checks the product/$\Phi$ accounting over the independent reversal
+pairs, and \path{P15_S11A_SCALAR_LINK_SYMBOLIC_VERIFIER} checks that the bivariate target reduces to the displayed
+univariate $L_m(t)$.  All residual polynomial coefficient lists are zero, so this proves that the displayed $K_m$
+sequence is the true pair-standard scalar sequence.
+\end{proof}

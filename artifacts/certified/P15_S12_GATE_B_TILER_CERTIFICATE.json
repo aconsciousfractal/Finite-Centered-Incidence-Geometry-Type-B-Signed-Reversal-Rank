@@ -1,0 +1,1071 @@
+{
+  "schema": "p15.s12_gate_b_tiler_certificate.v1",
+  "status": "GATE_B_CERTIFICATE_CLOSED",
+  "object": "X_n = B~I_n(1,1) subset B_n",
+  "finite_window_rows_n3_n21": [
+    {
+      "n": 3,
+      "N_n": 2,
+      "G_n": 48,
+      "quotient_floor": 24,
+      "G_mod_N": 0,
+      "gcd": 2,
+      "divides": true,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": false
+    },
+    {
+      "n": 4,
+      "N_n": 40,
+      "G_n": 384,
+      "quotient_floor": 9,
+      "G_mod_N": 24,
+      "gcd": 8,
+      "divides": false,
+      "window_lower": 9,
+      "window_upper": 10,
+      "window_label": "finite_n4",
+      "window_ok": true
+    },
+    {
+      "n": 5,
+      "N_n": 364,
+      "G_n": 3840,
+      "quotient_floor": 10,
+      "G_mod_N": 200,
+      "gcd": 4,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 6,
+      "N_n": 4080,
+      "G_n": 46080,
+      "quotient_floor": 11,
+      "G_mod_N": 1200,
+      "gcd": 240,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 7,
+      "N_n": 60152,
+      "G_n": 645120,
+      "quotient_floor": 10,
+      "G_mod_N": 43600,
+      "gcd": 8,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 8,
+      "N_n": 922560,
+      "G_n": 10321920,
+      "quotient_floor": 11,
+      "G_mod_N": 173760,
+      "gcd": 960,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 9,
+      "N_n": 17350096,
+      "G_n": 185794560,
+      "quotient_floor": 10,
+      "G_mod_N": 12293600,
+      "gcd": 16,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 10,
+      "N_n": 333714560,
+      "G_n": 3715891200,
+      "quotient_floor": 11,
+      "G_mod_N": 45031040,
+      "gcd": 640,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 11,
+      "N_n": 7628711072,
+      "G_n": 81749606400,
+      "quotient_floor": 10,
+      "G_mod_N": 5462495680,
+      "gcd": 32,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 12,
+      "N_n": 176839075200,
+      "G_n": 1961990553600,
+      "quotient_floor": 11,
+      "G_mod_N": 16760726400,
+      "gcd": 9600,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 13,
+      "N_n": 4755242336704,
+      "G_n": 51011754393600,
+      "quotient_floor": 10,
+      "G_mod_N": 3459331026560,
+      "gcd": 64,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 14,
+      "N_n": 129088846199040,
+      "G_n": 1428329123020800,
+      "quotient_floor": 11,
+      "G_mod_N": 8351814831360,
+      "gcd": 2446080,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 15,
+      "N_n": 3990113390619008,
+      "G_n": 42849873690624000,
+      "quotient_floor": 10,
+      "G_mod_N": 2948739784433920,
+      "gcd": 128,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 16,
+      "N_n": 124185000461670400,
+      "G_n": 1371195958099968000,
+      "quotient_floor": 11,
+      "G_mod_N": 5160953021593600,
+      "gcd": 358400,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 17,
+      "N_n": 4336977493677201664,
+      "G_n": 46620662575398912000,
+      "quotient_floor": 10,
+      "G_mod_N": 3250887638626895360,
+      "gcd": 256,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 18,
+      "N_n": 152254341783830384640,
+      "G_n": 1678343852714360832000,
+      "quotient_floor": 11,
+      "G_mod_N": 3546093092226600960,
+      "gcd": 184320,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 19,
+      "N_n": 5927813145221450158592,
+      "G_n": 63777066403145711616000,
+      "quotient_floor": 10,
+      "G_mod_N": 4498934950931210030080,
+      "gcd": 3584,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    },
+    {
+      "n": 20,
+      "N_n": 231736747350506094397440,
+      "G_n": 2551082656125828464640000,
+      "quotient_floor": 11,
+      "G_mod_N": 1978435270261426268160,
+      "gcd": 92160,
+      "divides": false,
+      "window_lower": 11,
+      "window_upper": 12,
+      "window_label": "even_6_to_20",
+      "window_ok": true
+    },
+    {
+      "n": 21,
+      "N_n": 9951094750784175870659584,
+      "G_n": 107145471557284795514880000,
+      "quotient_floor": 10,
+      "G_mod_N": 7634524049443036808284160,
+      "gcd": 1024,
+      "divides": false,
+      "window_lower": 10,
+      "window_upper": 11,
+      "window_label": "odd",
+      "window_ok": true
+    }
+  ],
+  "symbolic_truncation_certificates": {
+    "even_m_ge_11_lower_L9_minus_1_over_11": {
+      "shift": 11,
+      "degree": 4,
+      "numerator_coefficients_descending": [
+        29952,
+        753728,
+        6383328,
+        18796492,
+        5119335
+      ],
+      "all_coefficients_positive": true,
+      "denominator": "1774080*(2*m - 7)*(2*m - 5)*(2*m - 3)*(2*m - 1)"
+    },
+    "even_m_ge_11_upper_1_over_10_minus_U6": {
+      "shift": 11,
+      "degree": 3,
+      "numerator_coefficients_descending": [
+        48,
+        1528,
+        15693,
+        52493
+      ],
+      "all_coefficients_positive": true,
+      "denominator": "960*(2*m - 5)*(2*m - 3)*(2*m - 1)"
+    },
+    "odd_m_ge_11_lower_L9_minus_1_over_11": {
+      "shift": 11,
+      "degree": 6,
+      "numerator_coefficients_descending": [
+        479232,
+        32334080,
+        862589824,
+        11849156608,
+        89258599064,
+        351693457047,
+        568489477815
+      ],
+      "all_coefficients_positive": true,
+      "denominator": "14192640*(m - 2)*(2*m - 7)*(2*m - 5)*(2*m - 3)*(2*m - 1)*(2*m + 1)"
+    },
+    "odd_m_ge_11_upper_1_over_10_minus_U6": {
+      "shift": 11,
+      "degree": 4,
+      "numerator_coefficients_descending": [
+        48,
+        1960,
+        29845,
+        201040,
+        505827
+      ],
+      "all_coefficients_positive": true,
+      "denominator": "960*(m - 2)*(2*m - 3)*(2*m - 1)*(2*m + 1)"
+    }
+  },
+  "n3_exact_left_translate_tiling": {
+    "n": 3,
+    "group_size": 48,
+    "X_size": 2,
+    "target_tile_count": 24,
+    "distinct_left_translates": 24,
+    "left_translate_tiling_exists": true,
+    "chosen_left_translate_reps": [
+      [
+        -2,
+        1,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        -2,
+        1,
+        -3
+      ],
+      [
+        -1,
+        3,
+        2
+      ],
+      [
+        -1,
+        2,
+        -3
+      ],
+      [
+        1,
+        2,
+        -3
+      ],
+      [
+        -1,
+        3,
+        -2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        2,
+        1,
+        -3
+      ],
+      [
+        -1,
+        -3,
+        -2
+      ],
+      [
+        -2,
+        -1,
+        3
+      ],
+      [
+        -1,
+        -2,
+        3
+      ],
+      [
+        -1,
+        2,
+        3
+      ],
+      [
+        -1,
+        -2,
+        -3
+      ],
+      [
+        -2,
+        -1,
+        -3
+      ],
+      [
+        2,
+        -1,
+        -3
+      ],
+      [
+        1,
+        -2,
+        -3
+      ],
+      [
+        1,
+        3,
+        -2
+      ],
+      [
+        1,
+        -3,
+        2
+      ],
+      [
+        1,
+        -2,
+        3
+      ],
+      [
+        1,
+        -3,
+        -2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        -1,
+        3
+      ],
+      [
+        -1,
+        -3,
+        2
+      ]
+    ],
+    "reason": "exact_cover_search"
+  },
+  "odd_tail_coefficient_reduction": {
+    "f": "1+4x+2x^2",
+    "C_m": "S_{2m+1}(-x)=x f(x)^(m-2) Q_m(x)",
+    "Q_m_coefficients_x0_to_x4": [
+      "-1",
+      "4*(m - 2)*(m + 1)",
+      "4*(3*m**2 - 3*m - 5)",
+      "4*(3*m**2 - 3*m - 4)",
+      "4*(m**2 - m - 1)"
+    ],
+    "H_m": "2((2m+1)C_m-xC_m')-C_m/x=f(x)^(m-3)P_m(x)",
+    "P_m_coefficients_x0_to_x6": [
+      "1",
+      "-4*(m**2 - 3)",
+      "2*(8*m**3 - 26*m**2 - 2*m + 27)",
+      "4*(5*m - 4)*(4*m**2 - 5*m - 7)",
+      "4*(36*m**3 - 61*m**2 - 31*m + 27)",
+      "8*(14*m**3 - 23*m**2 - 9*m + 6)",
+      "8*(4*m**3 - 7*m**2 - m + 1)"
+    ],
+    "P_m_shift_m_equals_t_plus_11_coefficients_x0_to_x6": [
+      "1",
+      "-4*(t**2 + 22*t + 118)",
+      "2*(8*t**3 + 238*t**2 + 2330*t + 7507)",
+      "4*(5*t + 51)*(4*t**2 + 83*t + 422)",
+      "4*(36*t**3 + 1127*t**2 + 11695*t + 40221)",
+      "8*(14*t**3 + 439*t**2 + 4567*t + 15758)",
+      "8*(4*t**3 + 125*t**2 + 1297*t + 4467)"
+    ],
+    "P_m_shift_positive_except_x1": false,
+    "tail_lemma_status": "closed in P15_S12_GATE_B_TILER_PROOF_2026_07_07.md via Newton/log-concavity"
+  },
+  "tail_probe_rows": [
+    {
+      "n": 4,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 5,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 6,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 7,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 8,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 9,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 10,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 11,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 12,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 13,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 14,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 15,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 16,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 17,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 18,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 19,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 20,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 21,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 22,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 23,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 24,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 25,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 26,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 27,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 28,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 29,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 30,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 31,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 32,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 33,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 34,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 35,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 36,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 37,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 38,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 39,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 40,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 41,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 42,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 43,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 44,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 45,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 46,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 47,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 48,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 49,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 50,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 51,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 52,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 53,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 54,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 55,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 56,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 57,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 58,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 59,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 60,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 61,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 62,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 63,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 64,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 65,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 66,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 67,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 68,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 69,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 70,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 71,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 72,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 73,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 74,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 75,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 76,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 77,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 78,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 79,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 80,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 81,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 82,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 83,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 84,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 85,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 86,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 87,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 88,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 89,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 90,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 91,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 92,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 93,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 94,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 95,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 96,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 97,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 98,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 99,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 100,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 101,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 102,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 103,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 104,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 105,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 106,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 107,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 108,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 109,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 110,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 111,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 112,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 113,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 114,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 115,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 116,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 117,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 118,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 119,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    },
+    {
+      "n": 120,
+      "sign_pattern_ok": true,
+      "normalized_terms_decreasing_from_2": true
+    }
+  ],
+  "summary": {
+    "finite_n3_is_divisible_exception": true,
+    "n3_exact_left_translate_tiling_exists": true,
+    "n3_exact_left_translate_tile_count": 24,
+    "finite_windows_ok_n4_n21": true,
+    "finite_divisibility_fails_n4_n21": true,
+    "symbolic_truncation_all_positive": true,
+    "tail_probe_signs_ok_to_max": true,
+    "tail_probe_decreasing_to_max": true,
+    "max_tail_probe_n": 120,
+    "gate_b_status": "PASS: finite windows, symbolic truncations, and tail monotonicity proof closed"
+  }
+}

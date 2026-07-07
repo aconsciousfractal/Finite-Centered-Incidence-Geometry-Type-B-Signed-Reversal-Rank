@@ -1,0 +1,220 @@
+{
+  "boundary": "S9C closes recurrence and positivity of the displayed K_m formula sequence only; downstream S11A-K owns and now supplies the formula-to-true-scalar link. S9C alone promotes no public theorem or Type-D/fingerprint claim.",
+  "checks": [
+    {
+      "A": "2*x^2 - 4*x + 1",
+      "R_degrees": {
+        "m": 15,
+        "terms": 217,
+        "x": 13
+      },
+      "S_at_x0_zero": true,
+      "S_degrees": {
+        "m": 14,
+        "terms": 192,
+        "x": 13
+      },
+      "boundary_infinity_zero": true,
+      "id": "all_m_telescoping_certificate",
+      "identity": "A*S_x + ((m-4)*A_x - A)*S = A*sum_j p_j(m)2^jA^jQ_{m+j}",
+      "residual_terms": 0,
+      "status": "PASS",
+      "valid_for": "m>=4, with m=2..3 recurrence edge cases checked exactly"
+    },
+    {
+      "first_K_values": {
+        "10": 4144053819868714010631168,
+        "2": 28,
+        "3": 14640,
+        "4": 5241648,
+        "5": 2587263104,
+        "6": 1732624251840,
+        "7": 1526959331026176,
+        "8": 1720145567509277440,
+        "9": 2416102998173690843136
+      },
+      "first_lambda_values": {
+        "10": 460450424429857112292352,
+        "2": 28,
+        "3": 7320,
+        "4": 1747216,
+        "5": 646815776,
+        "6": 346524850368,
+        "7": 254493221837696,
+        "8": 245735081072753920,
+        "9": 302012874771711355392
+      },
+      "id": "edge_case_and_finite_sanity",
+      "nonzero_residuals": {},
+      "range": "m=2..100",
+      "status": "PASS"
+    },
+    {
+      "D_coefficients_low_to_high": [
+        0,
+        14229504,
+        77340416,
+        164429248,
+        126734368,
+        -194789952,
+        -803816992,
+        -1433672160,
+        -1609711040,
+        -1122952928,
+        -373599552,
+        90201152,
+        164739328,
+        83820544,
+        22642688,
+        3260416,
+        196608
+      ],
+      "base_ok": true,
+      "base_range": "m=2..8 for K_m>0 and rho_m>=4m^2",
+      "base_rows": [
+        {
+          "K_m": 28,
+          "m": 2,
+          "ok": true,
+          "rho_den": 7,
+          "rho_num": 3660,
+          "threshold_4m2": 16
+        },
+        {
+          "K_m": 14640,
+          "m": 3,
+          "ok": true,
+          "rho_den": 305,
+          "rho_num": 109201,
+          "threshold_4m2": 36
+        },
+        {
+          "K_m": 5241648,
+          "m": 4,
+          "ok": true,
+          "rho_den": 327603,
+          "rho_num": 161703944,
+          "threshold_4m2": 64
+        },
+        {
+          "K_m": 2587263104,
+          "m": 5,
+          "ok": true,
+          "rho_den": 40425986,
+          "rho_num": 27072253935,
+          "threshold_4m2": 100
+        },
+        {
+          "K_m": 1732624251840,
+          "m": 6,
+          "ok": true,
+          "rho_den": 9024084645,
+          "rho_num": 7952913182428,
+          "threshold_4m2": 144
+        },
+        {
+          "K_m": 1526959331026176,
+          "m": 7,
+          "ok": true,
+          "rho_den": 5964684886821,
+          "rho_num": 6719318623083115,
+          "threshold_4m2": 196
+        },
+        {
+          "K_m": 1720145567509277440,
+          "m": 8,
+          "ok": true,
+          "rho_den": 959902660440445,
+          "rho_num": 1348271762373711408,
+          "threshold_4m2": 256
+        }
+      ],
+      "conclusion": "K_m>0 for all m>=2",
+      "id": "all_m_K_m_positivity_from_recurrence",
+      "ratio_induction_start_m": 7,
+      "ratio_threshold": "rho_m>=4*m^2",
+      "sign_and_D_checks": [
+        {
+          "degree": 12,
+          "method": "substitute m=q+7; all coefficients in q are nonnegative and constant term is positive",
+          "name": "p0_positive_from_7",
+          "negative_shifted_coefficients": {},
+          "shifted_coefficients_nonnegative": true,
+          "shifted_constant": 8528665738779648,
+          "shifted_constant_positive": true,
+          "shifted_degree": 12,
+          "status": "PASS",
+          "valid_for_m_ge": 7
+        },
+        {
+          "degree": 11,
+          "method": "substitute m=q+7; all coefficients in q are nonnegative and constant term is positive",
+          "name": "p1_nonpositive_from_7",
+          "negative_shifted_coefficients": {},
+          "shifted_coefficients_nonnegative": true,
+          "shifted_constant": 11940698671488,
+          "shifted_constant_positive": true,
+          "shifted_degree": 11,
+          "status": "PASS",
+          "valid_for_m_ge": 7
+        },
+        {
+          "degree": 12,
+          "method": "substitute m=q+7; all coefficients in q are nonnegative and constant term is positive",
+          "name": "minus_p2_positive_from_7",
+          "negative_shifted_coefficients": {},
+          "shifted_coefficients_nonnegative": true,
+          "shifted_constant": 1174432443650244,
+          "shifted_constant_positive": true,
+          "shifted_degree": 12,
+          "status": "PASS",
+          "valid_for_m_ge": 7
+        },
+        {
+          "degree": 10,
+          "method": "substitute m=q+7; all coefficients in q are nonnegative and constant term is positive",
+          "name": "p3_positive_from_7",
+          "negative_shifted_coefficients": {},
+          "shifted_coefficients_nonnegative": true,
+          "shifted_constant": 684729829392,
+          "shifted_constant_positive": true,
+          "shifted_degree": 10,
+          "status": "PASS",
+          "valid_for_m_ge": 7
+        },
+        {
+          "degree": 16,
+          "method": "substitute m=q+7; all coefficients in q are nonnegative and constant term is positive",
+          "name": "ratio_D_positive_from_7",
+          "negative_shifted_coefficients": {},
+          "shifted_coefficients_nonnegative": true,
+          "shifted_constant": 47788124356914213888,
+          "shifted_constant_positive": true,
+          "shifted_degree": 16,
+          "status": "PASS",
+          "valid_for_m_ge": 7
+        }
+      ],
+      "status": "PASS"
+    }
+  ],
+  "closed_at_S9C": [
+    "The order-3 recurrence for K_m is certified for all m>=4 by a concrete integration-by-parts certificate.",
+    "The recurrence edge cases m=2..3 are checked exactly by finite sanity.",
+    "The ratio induction proves K_m>0 for all m>=2 from the recurrence and finite base rows.",
+    "S9C itself does not identify this displayed formula sequence with the true odd pair-standard k=1 scalar; downstream S11A-K now supplies that closure."
+  ],
+  "closed_downstream_after_S9C": [
+    "S11A-K formula-to-true-scalar closure is now closed downstream by the S11A-K global product/Phi certificate."
+  ],
+  "decision": "S9C K_m formula-sequence recurrence certificate passes; K_m>0 for all m>=2 is certified for the displayed formula sequence.",
+  "failed_checks": [],
+  "gate": "P15-S9C K_m recurrence certificate",
+  "open_after_S9C": [
+    "Positive-only separator and full B_n fingerprint remain separate research tasks.",
+    "D~I remains Type-D scout-only; no Type-D theorem is promoted."
+  ],
+  "project": "P15 signed reversal rank theorem",
+  "schema": "p15.s9c.km_recurrence_certificate.v1",
+  "status": "PASS"
+}

@@ -1,0 +1,123 @@
+\section{Positive-Only Separator Add-On}\label{sec:separator}
+
+Set
+\[
+  X_n=\BtildeI_n(1,1).
+\]
+This section uses the equivalent one-indexed signed-word convention
+$w=(w_1,\ldots,w_n)$, with $|w_1|,\ldots,|w_n|$ a permutation of $\{1,\ldots,n\}$ and
+$\rho(i)=n+1-i$.  Thus
+\[
+  X_n=\{w\in B_n:\#\{i:w_i=i\}=1,\ \#\{i:w_i=\rho(i)\}=1\}.
+\]
+For a signed word define the Reiner-style total order \cite{Reiner1993}
+\[
+  T(w): -w_n<\cdots<-w_1<0<w_1<\cdots<w_n.
+\]
+Let $\Sigma_n=\{-n,\ldots,-1,0,1,\ldots,n\}$.  For $X\subseteq B_n$, put
+\[
+  C(X)=\bigcap_{w\in X}\{(a,b)\in\Sigma_n^2:a\text{ precedes }b\text{ in }T(w)\}.
+\]
+If $X=L_B(P)$ is the signed linear-extension set of a signed poset $P$, then every strict relation of $P$, and every
+relation in its transitive closure, lies in $C(X)$.
+
+\begin{theorem}[Positive-only separator]\label{thm:s12}
+For every $n\ge4$, the layer $X_n=\BtildeI_n(1,1)$ is not a Reiner-style signed-poset linear-extension set and is not
+an exact left-translate tiler of $B_n$.  For $n=3$, the divisibility obstruction disappears and there is an exact
+left-translate tiling of $B_3$ by $X_3$.
+\end{theorem}
+
+\begin{proof}
+We first prove the signed-poset obstruction.  For $n\ge5$, any prescribed signs on at most two absolute labels can be
+extended to an element of $X_n$.  Indeed, positive labels create fixed or reversal hits only when placed in their two
+dangerous rows, while negative labels create no positive hit.  Place the prescribed positive labels, then add exactly
+one positive fixed hit and one positive reversal hit; all remaining labels are placed negatively.  If the odd center is
+used, it is used as the intended center hit, since the center supplies both hit types at once.  Otherwise auxiliary
+positive labels are chosen away from the center and away from their dangerous rows.  With at most two prescribed labels,
+there is always such a spare choice for $n\ge5$.
+
+Given any ordered pair $a\ne b$ in $\Sigma_n$, choose signs so that $b$ lies before $0$ and $a$ lies after $0$ in
+$T(w)$.  If $a,b$ are nonzero and $a\ne-b$, prescribe $|a|$ with the sign of $a$ and $|b|$ with the opposite sign to
+$b$.  If $a=-b$, prescribe only $|a|$ with the sign of $a$.  If one entry is $0$, prescribe the other label on the
+required side of $0$.  The sign-extension construction then gives $w\in X_n$ in which $b$ precedes $a$.  Hence
+$C(X_n)=\varnothing$ for $n\ge5$.
+
+The boundary case $n=4$ is finite: an exact finite check records witnesses in $X_4$ reversing all $72$ ordered pairs
+in $\Sigma_4$.  Thus $C(X_4)=\varnothing$ as well.  If $X_n=L_B(P)$ for some signed poset $P$, all relations of $P$
+would lie in $C(X_n)$, so $P$ would be the antichain and $L_B(P)=B_n$.  But $X_n\ne B_n$, for instance the all-negative
+identity has no positive fixed or reversal hit.  This proves the signed-poset obstruction for all $n\ge4$.
+
+For the tiler obstruction, an exact left-translate tiling by $X_n$ requires $N_n=|X_n|$ to divide
+$G_n=|B_n|=2^n n!$.  The count of $X_n$ is obtained from the rook polynomial
+\[
+  R_{2m}(A,B,Z)=(1+2AZ+2BZ+A^2Z^2+B^2Z^2)^m,
+\]
+\[
+  R_{2m+1}(A,B,Z)=R_{2m}(A,B,Z)(1+AZ+BZ+ABZ),
+\]
+where $A$ marks selected positive fixed events, $B$ selected positive reversal events, and $Z$ distinct forced cells.
+Inclusion-exclusion for exactly one event of each type gives
+\[
+  N_n=\sum_{p,q\ge1,u}(-1)^{p+q}pq[A^pB^qZ^u]R_n(A,B,Z)2^{n-u}(n-u)!.
+\]
+Equivalently, for
+\[
+  S_n(Z)=\left.(A\partial_A)(B\partial_B)R_n(A,B,Z)\right|_{A=B=-1},
+\]
+we have
+\[
+  \frac{N_n}{G_n}=\sum_u \frac{[Z^u]S_n(Z)}{2^u(n)_u}.
+\]
+The differentiated series are
+\[
+S_{2m}(Z)=4m(m-1)Z^2(1-Z)^2(1-4Z+2Z^2)^{m-2},
+\]
+\[
+S_{2m+1}(Z)=Z(1-4Z+2Z^2)^m+4m(m-1)Z^2(1-Z)^3(1-4Z+2Z^2)^{m-2}.
+\]
+Substituting $Z=-x$ makes the tails alternating.  The certificate
+\path{P15_S12_GATE_B_TILER_CERTIFICATE}, routed in Appendix~\ref{app:certs}, records the exact finite window
+$4\le n\le21$, the $n=3$ exact cover, and the symbolic all-$n$ tail inequalities below.
+
+For even $n=2m\ge22$, write
+\[
+  S_{2m}(-x)=4m(m-1)x^2(1+x)^2f(x)^{m-2},\qquad f(x)=1+4x+2x^2.
+\]
+Because $f(x)=(1+(2+\sqrt2)x)(1+(2-\sqrt2)x)$ has positive linear factors, the coefficients of
+$(1+x)^2f(x)^{m-2}$ are ultra-log-concave by Newton's inequalities.  If $c_u=[x^u]S_{2m}(-x)$, this gives
+\[
+  \frac{c_{u+1}}{2^{u+1}(2m)_{u+1}}\le
+  \frac{c_u}{2^u(2m)_u},
+\]
+so the normalized alternating tail is decreasing.  The certificate then checks the two finite symbolic inequalities
+$L_9>1/11$ and $U_6<1/10$ after the shift $m=t+11$; all coefficients of the resulting polynomials are positive.
+
+For odd $n=2m+1\ge23$, the first coefficient of $S_{2m+1}(-x)$ is negative and all later coefficients are positive.
+Indeed
+\[
+S_{2m+1}(-x)=x f(x)^{m-2}Q_m(x),
+\]
+and the certificate lists the coefficients of $Q_m$: the nonconstant coefficients are positive for $m\ge11$, while the
+top three support degrees are supplied by the positive high coefficients of $Q_m$.  To prove the normalized tail is
+monotone from degree $2$, put $C_m(x)=S_{2m+1}(-x)$ and use the equivalent coefficient positivity of
+\[
+  H_m(x)=2((2m+1)C_m(x)-xC_m'(x))-C_m(x)/x.
+\]
+The identity $H_m(x)=f(x)^{m-3}P_m(x)$ is checked symbolically, and Newton log-concavity for $f(x)^{m-3}$ reduces the
+possible negative contribution of the linear term of $P_m$ to a positive quadratic lower bound for every $m\ge11$.
+As in the even case, the certificate checks $L_9>1/11$ and $U_6<1/10$ after the shift $m=t+11$ by coefficient
+positivity.  Thus the alternating-tail bounds and exact finite checks give
+\[
+  9< G_4/N_4<10,
+\]
+\[
+  10<G_n/N_n<11\quad(n\ge5\text{ odd}),
+\]
+\[
+  11<G_n/N_n<12\quad(6\le n\le20\text{ even}),
+\]
+\[
+  10<G_n/N_n<11\quad(n\ge22\text{ even}).
+\]
+Thus $G_n/N_n$ is never an integer for $n\ge4$, so $X_n$ cannot tile $B_n$ by exact left translates.  For $n=3$, an exact finite check records an exact cover by $24$ left translates of the two-element set $X_3$.
+\end{proof}
