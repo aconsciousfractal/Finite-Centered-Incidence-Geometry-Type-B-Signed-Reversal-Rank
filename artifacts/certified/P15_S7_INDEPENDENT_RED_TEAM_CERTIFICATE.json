@@ -1553,57 +1553,57 @@
     {
       "files_scanned": [
         {
-          "bytes": 593,
+          "bytes": 1405,
           "forbidden_hits": [],
           "path": "STATUS.md"
         },
         {
-          "bytes": 605,
+          "bytes": 657,
           "forbidden_hits": [],
           "path": "ROUTE_PLAN.md"
         },
         {
-          "bytes": 739,
+          "bytes": 2960,
           "forbidden_hits": [],
           "path": "CLAIM_LEDGER.md"
         },
         {
-          "bytes": 628,
+          "bytes": 631,
           "forbidden_hits": [],
           "path": "PROOF_OBLIGATIONS.md"
         },
         {
-          "bytes": 823,
+          "bytes": 824,
           "forbidden_hits": [],
           "path": "PUBLIC_CLAIM_BOUNDARY.md"
         },
         {
-          "bytes": 1950,
+          "bytes": 2509,
           "forbidden_hits": [],
           "path": "README.md"
         },
         {
-          "bytes": 585,
+          "bytes": 588,
           "forbidden_hits": [],
           "path": "P15_DETAILED_ROADMAP_2026_07_06.md"
         },
         {
-          "bytes": 586,
+          "bytes": 589,
           "forbidden_hits": [],
           "path": "docs\\P15_S1_OBJECT_ADMISSION_AND_CONVENTIONS_2026_07_06.md"
         },
         {
-          "bytes": 622,
+          "bytes": 625,
           "forbidden_hits": [],
           "path": "docs\\P15_S4_EVEN_N_THEOREM_2026_07_06.md"
         },
         {
-          "bytes": 605,
+          "bytes": 608,
           "forbidden_hits": [],
           "path": "docs\\P15_S5_ODD_N_STRUCTURE_2026_07_06.md"
         },
         {
-          "bytes": 596,
+          "bytes": 599,
           "forbidden_hits": [],
           "path": "docs\\P15_S6_SQUARE_AND_CLOSED_FORMS_2026_07_06.md"
         }
@@ -1632,15 +1632,15 @@
   "failed_checks": [],
   "gate": "P15-S7 independent red-team recompute",
   "open_after_S7": [
-    "S8 H_m recurrence / creative-telescoping certificate for odd k=1 remains open.",
-    "General odd pair-standard positivity for lam_prime and mu remains open.",
-    "P15-S9 manuscript/public-claim shaping remains open.",
+    "S8 H_m recurrence / creative-telescoping certificate for odd k=1 was open at S7. [Subsequently closed by S8 and S11A-H.]",
+    "General odd pair-standard positivity for lam_prime and mu was open at S7. [Subsequently closed by S9C and S11A-K.]",
+    "P15-S9 manuscript/public-claim shaping was open at S7. [Subsequently completed: S9/S10 public boundary and the S12 separator theorem.]",
     "D~I remains Type-D scout-only; no Type-D theorem is promoted."
   ],
   "project": "P15 signed reversal rank theorem",
   "proof_checklist": {
     "A000354_boundary_recomputed": true,
-    "S8_H_m_and_odd_pair_positivity_remain_open": true,
+    "S8_H_m_and_odd_pair_positivity_open_at_S7": true,
     "active_boundary_scan_clean": true,
     "ambient_channels_recomputed_from_raw_signed_permutations": true,
     "no_import_from_S3_S6_certificate_scripts": true,

@@ -1505,12 +1505,12 @@
     "Odd k=1 residual is isolated as a(2m+1,1)=a(2m,1)+H_m for m>=2.",
     "Odd pair-standard channel is reduced to exact lam_prime and mu eigenvalues."
   ],
-  "decision": "S5 reduction gate passes; full odd-n theorem remains open pending H_m and pair-standard positivity proofs.",
+  "decision": "S5 reduction gate passes. As of S5 the full odd-n theorem was still open pending H_m and pair-standard positivity; both were subsequently closed by S8/S9C/S11A (see CLAIM_LEDGER row P15-RANK-TWO-STANDARD).",
   "failed_checks": [],
   "gate": "P15-S5 odd-n structure",
   "open_after_S5": [
-    "P15-S8 must certify the H_m recurrence/creative-telescoping proof for all m.",
-    "General positivity proofs for odd pair-standard lam_prime and mu remain open.",
+    "P15-S8 was required at S5 to certify the H_m recurrence/creative-telescoping proof for all m. [Subsequently closed by S8 and S11A-H.]",
+    "General positivity proofs for odd pair-standard lam_prime and mu were open at S5. [Subsequently closed by S9C and S11A-K.]",
     "No Type-D, C2xC2 square, full B_n fingerprint, or public theorem claim is promoted at S5."
   ],
   "project": "P15 signed reversal rank theorem",

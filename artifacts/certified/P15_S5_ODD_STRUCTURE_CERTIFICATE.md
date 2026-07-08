@@ -51,6 +51,6 @@ n=7: lam_prime values 7320,1460,84; mu values 13560,4100,132
 
 ## Decision
 
-P15-S5 PASS as a reduction gate. The full odd theorem is not yet closed: `H_m` all-`m` certification and general odd pair-standard positivity remain open.
+P15-S5 PASS as a reduction gate. As of S5 the full odd theorem was not yet closed: `H_m` all-`m` certification and general odd pair-standard positivity were still open at this gate. Both were subsequently closed — `H_m` by S8 and S11A-H, odd pair-standard positivity by S9C and S11A-K (see CLAIM_LEDGER row P15-RANK-TWO-STANDARD and paper Sections 6-9).
 
 Next gate: P15-S6 `C_2 x C_2` square and closed forms.

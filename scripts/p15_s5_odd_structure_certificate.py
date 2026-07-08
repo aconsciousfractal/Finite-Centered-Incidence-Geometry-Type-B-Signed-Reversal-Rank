@@ -16,9 +16,10 @@ structure now available:
 * The remaining odd k=1, n>=5 V_ref residual is isolated as
       a(2m+1,1) = a(2m,1) + H_m.
   Positivity of H_m is replayed for finite range, but the recurrence certificate
-  proving H_m>0 for all m is deferred to P15-S8.
+  proving H_m>0 for all m is deferred to P15-S8 (subsequently closed by S8 and S11A-H).
 * The odd pair-standard channel reduces exactly to lam_prime and mu; finite
-  positivity is replayed for n=3,5,7, while the general proof remains open.
+  positivity is replayed for n=3,5,7, while the general proof was open at S5 and was
+  subsequently closed by S9C and S11A-K.
 
 Run with python -B to avoid writing __pycache__ on Windows.
 """
@@ -532,7 +533,7 @@ def make_report(limit_m: int = 10, hm_ground_m: int = 7, hm_positive_m: int = 16
         "project": "P15 signed reversal rank theorem",
         "gate": "P15-S5 odd-n structure",
         "status": "PASS" if not failed and all(proof_checklist.values()) else "FAIL",
-        "decision": "S5 reduction gate passes; full odd-n theorem remains open pending H_m and pair-standard positivity proofs.",
+        "decision": "S5 reduction gate passes. As of S5 the full odd-n theorem was still open pending H_m and pair-standard positivity; both were subsequently closed by S8/S9C/S11A (see CLAIM_LEDGER row P15-RANK-TWO-STANDARD).",
         "failed_checks": failed,
         "scope": "odd n structure for the two ambient standard channels; no public theorem promotion",
         "checks": checks,
@@ -546,8 +547,8 @@ def make_report(limit_m: int = 10, hm_ground_m: int = 7, hm_positive_m: int = 16
             "Odd pair-standard channel is reduced to exact lam_prime and mu eigenvalues.",
         ],
         "open_after_S5": [
-            "P15-S8 must certify the H_m recurrence/creative-telescoping proof for all m.",
-            "General positivity proofs for odd pair-standard lam_prime and mu remain open.",
+            "P15-S8 was required at S5 to certify the H_m recurrence/creative-telescoping proof for all m. [Subsequently closed by S8 and S11A-H.]",
+            "General positivity proofs for odd pair-standard lam_prime and mu were open at S5. [Subsequently closed by S9C and S11A-K.]",
             "No Type-D, C2xC2 square, full B_n fingerprint, or public theorem claim is promoted at S5.",
         ],
     }

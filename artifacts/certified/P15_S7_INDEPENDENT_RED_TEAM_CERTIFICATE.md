@@ -46,11 +46,11 @@ a(2m+1,1) = a(2m,1) + H_m
 
 and leaves `H_m>0` as the S8 certificate obligation.
 
-## Still Open
+## Open As Of S7 (Since Resolved)
 
-- P15-S8: certify the `H_m` recurrence / creative-telescoping step for odd `k=1`.
-- General odd `V_pair-std` positivity for `lam_prime` and `mu`.
-- P15-S9: manuscript/public-boundary shaping and separator/full-fingerprint scouting.
+- P15-S8: certify the `H_m` recurrence / creative-telescoping step for odd `k=1`. [Subsequently closed by S8 and S11A-H.]
+- General odd `V_pair-std` positivity for `lam_prime` and `mu`. [Subsequently closed by S9C and S11A-K.]
+- P15-S9: manuscript/public-boundary shaping and separator/full-fingerprint scouting. [S9/S10 boundary and the S12 separator theorem subsequently completed; the full native `B_n` fingerprint remains open by design.]
 - `D~I` remains Type-D scout-only; no Type-D theorem is promoted.
 
 Verdict: PASS. Next gate: P15-S8 `H_m` recurrence certificate.

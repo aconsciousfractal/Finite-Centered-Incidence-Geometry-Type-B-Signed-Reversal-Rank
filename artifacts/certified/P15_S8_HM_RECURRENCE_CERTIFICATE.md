@@ -90,7 +90,7 @@ The positivity induction checks signs of `p0`, `p1`, `-p2`, `p3`, positivity of 
 ## Still Open
 
 - Odd pair-standard downstream closure and S11A-K formula-to-true-scalar closure are now closed downstream by S9/S9C/S11A-K.
-- Positive-only separator hunt and full `B_n` fingerprint.
+- Positive-only separator hunt [subsequently closed by the S12 separator theorem] and the full native `B_n` fingerprint [remains open by design].
 - `D~I` remains Type-D scout-only; no Type-D theorem is promoted.
 
 Verdict: PASS. Next gate: P15-S9 manuscript shape, odd pair-standard positivity, and separator/fingerprint boundary work.

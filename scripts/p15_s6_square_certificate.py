@@ -417,9 +417,9 @@ def make_report(max_n: int = 7, max_dtilde_even_n: int = 6) -> dict:
             "The even D~I count correction Delta is replayed for all rows in finite cases.",
         ],
         "open_after_S6": [
-            "S7 independent red-team recompute remains required before manuscript promotion.",
-            "S8 H_m recurrence certificate remains required for the odd k=1 rank residual.",
-            "General odd pair-standard positivity remains open.",
+            "S7 independent red-team recompute was required at S6 before manuscript promotion. [Subsequently completed: S7 PASS.]",
+            "S8 H_m recurrence certificate was required at S6 for the odd k=1 rank residual. [Subsequently closed by S8 and S11A-H.]",
+            "General odd pair-standard positivity was open at S6. [Subsequently closed by S9C and S11A-K.]",
             "D~I remains scout-only; no Type-D theorem is promoted.",
         ],
     }

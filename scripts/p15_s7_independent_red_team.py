@@ -555,7 +555,7 @@ def make_report(max_channel_n: int, max_eval_n: int, max_exact_count_n: int, max
         "square_and_D_scout_counts_recomputed_independently": checks[2]["status"] == "PASS",
         "active_boundary_scan_clean": checks[3]["status"] == "PASS",
         "no_public_theorem_promoted_at_S7": True,
-        "S8_H_m_and_odd_pair_positivity_remain_open": True,
+        "S8_H_m_and_odd_pair_positivity_open_at_S7": True,
     }
     return {
         "schema": SCHEMA,
@@ -574,9 +574,9 @@ def make_report(max_channel_n: int, max_eval_n: int, max_exact_count_n: int, max
             "Active boundary text is clean of the stale H_m equivalence wording.",
         ],
         "open_after_S7": [
-            "S8 H_m recurrence / creative-telescoping certificate for odd k=1 remains open.",
-            "General odd pair-standard positivity for lam_prime and mu remains open.",
-            "P15-S9 manuscript/public-claim shaping remains open.",
+            "S8 H_m recurrence / creative-telescoping certificate for odd k=1 was open at S7. [Subsequently closed by S8 and S11A-H.]",
+            "General odd pair-standard positivity for lam_prime and mu was open at S7. [Subsequently closed by S9C and S11A-K.]",
+            "P15-S9 manuscript/public-claim shaping was open at S7. [Subsequently completed: S9/S10 public boundary and the S12 separator theorem.]",
             "D~I remains Type-D scout-only; no Type-D theorem is promoted.",
         ],
     }
