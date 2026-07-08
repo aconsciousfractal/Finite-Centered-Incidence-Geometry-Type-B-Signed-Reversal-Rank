@@ -21,13 +21,13 @@ This is still not a public theorem promotion by S9C alone; downstream S11A-K sup
 ## Machine Artifact
 
 - Script: `scripts/p15_s9c_km_recurrence_certificate.py`
-- JSON: `certified/P15_S9C_KM_RECURRENCE_CERTIFICATE.json`
+- JSON: `artifacts/certified/P15_S9C_KM_RECURRENCE_CERTIFICATE.json`
 - Schema: `p15.s9c.km_recurrence_certificate.v1`
 
 Run command:
 
 ```text
-python -B scripts/p15_s9c_km_recurrence_certificate.py --max-m 100 --write-json certified/P15_S9C_KM_RECURRENCE_CERTIFICATE.json
+python -B scripts/p15_s9c_km_recurrence_certificate.py --max-m 100 --write-json artifacts/certified/P15_S9C_KM_RECURRENCE_CERTIFICATE.json
 ```
 
 ## Certificate Shape

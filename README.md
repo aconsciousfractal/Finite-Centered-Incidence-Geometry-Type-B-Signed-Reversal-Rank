@@ -48,11 +48,11 @@ REPRODUCE.md                   replay and paper-build commands
 README_REVIEWER.md             suggested reviewer path
 ```
 
-## Quick Start
+## Quick Smoke Test
 
 ```text
 pip install -r requirements.txt
 python -B scripts/p15_s4_even_theorem_certificate.py --write-json artifacts/certified/P15_S4_EVEN_N_THEOREM_CERTIFICATE.json
 ```
 
-See `REPRODUCE.md` for the tiered replay path and the `pdflatex`/`bibtex` paper build.
+This command checks only the even-row core certificate. For the full theorem replay, use `REPRODUCE.md`, especially the Core Theorem Replay and Scalar-Link Replay sections. See `REPRODUCE.md` also for the `pdflatex`/`bibtex` paper build.

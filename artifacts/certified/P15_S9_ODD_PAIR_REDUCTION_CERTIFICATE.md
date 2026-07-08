@@ -21,13 +21,13 @@ That residue is now closed downstream by the P15-S9C K_m recurrence certificate.
 ## Machine Artifact
 
 - Script: `scripts/p15_s9_odd_pair_reduction_certificate.py`
-- JSON: `certified/P15_S9_ODD_PAIR_REDUCTION_CERTIFICATE.json`
+- JSON: `artifacts/certified/P15_S9_ODD_PAIR_REDUCTION_CERTIFICATE.json`
 - Schema: `p15.s9.odd_pair_reduction_certificate.v1`
 
 Run command:
 
 ```text
-python -B scripts/p15_s9_odd_pair_reduction_certificate.py --max-m 10 --max-formula-m 10 --write-json certified/P15_S9_ODD_PAIR_REDUCTION_CERTIFICATE.json
+python -B scripts/p15_s9_odd_pair_reduction_certificate.py --max-m 10 --max-formula-m 10 --write-json artifacts/certified/P15_S9_ODD_PAIR_REDUCTION_CERTIFICATE.json
 ```
 
 ## Certificate Shape

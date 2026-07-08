@@ -21,7 +21,7 @@ for even `n` and every `k>=1` with nonempty diagonal layer.
 1. `docs/P15_S4_EVEN_N_THEOREM_2026_07_06.md` - theorem statement, proof, boundary, and replay linkage.
 2. `scripts/p15_s4_even_theorem_certificate.py` - focused S4 certificate builder; imports the S3 exact engine and
    runs with `python -B` to avoid `__pycache__` writes.
-3. `certified/P15_S4_EVEN_N_THEOREM_CERTIFICATE.json` - machine-readable S4 certificate, UTF-8 no BOM.
+3. `artifacts/certified/P15_S4_EVEN_N_THEOREM_CERTIFICATE.json` - machine-readable S4 certificate, UTF-8 no BOM.
 
 ## Observed command
 

@@ -48,4 +48,4 @@ S11A-K: closed by `P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER`, `P15_S11A_K_GLOBA
 ## Artifacts
 
 - `scripts/p15_s11a_scalar_link_symbolic_verifier.py`
-- `certified/P15_S11A_SCALAR_LINK_SYMBOLIC_VERIFIER.json`
+- `artifacts/certified/P15_S11A_SCALAR_LINK_SYMBOLIC_VERIFIER.json`

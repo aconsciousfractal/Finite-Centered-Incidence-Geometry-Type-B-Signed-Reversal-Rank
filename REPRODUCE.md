@@ -65,6 +65,17 @@ python -B scripts/p15_full_bn_t124_rational_direct_rank_audit.py --family T2 --w
 python -B scripts/p15_full_bn_t124_rational_direct_rank_audit.py --family T4 --write-json artifacts/certified/P15_FULL_BN_T4_RATIONAL_DIRECT_RANK_AUDIT.json --write-md artifacts/certified/P15_FULL_BN_T4_RATIONAL_DIRECT_RANK_AUDIT.md
 ```
 
+
+## Optional Citation Metadata Check
+
+`CITATION.cff` is valid YAML and includes the repository citation plus the preferred article citation. If `cffconvert` is installed, run:
+
+```text
+cffconvert --validate -i CITATION.cff
+```
+
+The code license is MIT; paper/prose/PDF artifacts are CC-BY-4.0 as specified in `LICENSE`.
+
 ## Paper Build
 
 From the repository root:

@@ -15,13 +15,13 @@ S7 is not a new infinite theorem. It is a red-team gate: it asks whether an inde
 ## Machine Artifact
 
 - Script: `scripts/p15_s7_independent_red_team.py`
-- JSON: `certified/P15_S7_INDEPENDENT_RED_TEAM_CERTIFICATE.json`
+- JSON: `artifacts/certified/P15_S7_INDEPENDENT_RED_TEAM_CERTIFICATE.json`
 - Schema: `p15.s7.independent_red_team.v1`
 
 Run command:
 
 ```text
-python -B scripts/p15_s7_independent_red_team.py --write-json certified/P15_S7_INDEPENDENT_RED_TEAM_CERTIFICATE.json
+python -B scripts/p15_s7_independent_red_team.py --write-json artifacts/certified/P15_S7_INDEPENDENT_RED_TEAM_CERTIFICATE.json
 ```
 
 ## Checks Passed

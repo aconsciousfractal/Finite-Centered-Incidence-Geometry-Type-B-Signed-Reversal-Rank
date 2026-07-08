@@ -27,6 +27,20 @@ an exact left-translate tiler of $B_n$.  For $n=3$, the divisibility obstruction
 left-translate tiling of $B_3$ by $X_3$.
 \end{theorem}
 
+\begin{center}
+\begingroup
+\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}}
+\textbf{Part} & \textbf{Proof type} & \textbf{Replay route}\\
+\hline
+signed-poset obstruction & local sign-extension construction plus exact finite $n=4$ bridge & S12A\\
+$n=3$ tiling exception & exact finite cover & S12B\\
+translate-tiler obstruction & rook-polynomial count, divisibility, tail inequalities, and finite window & S12B\\
+\end{tabular}
+\endgroup
+\end{center}
+
+\noindent\textit{Proof-route map.}  This is an additional scoped theorem, separate from the two-standard-channel rank theorem.
 \begin{proof}
 We first prove the signed-poset obstruction.  For $n\ge5$, any prescribed signs on at most two absolute labels can be
 extended to an element of $X_n$.  Indeed, positive labels create fixed or reversal hits only when placed in their two
@@ -34,7 +48,7 @@ dangerous rows, while negative labels create no positive hit.  Place the prescri
 one positive fixed hit and one positive reversal hit; all remaining labels are placed negatively.  If the odd center is
 used, it is used as the intended center hit, since the center supplies both hit types at once.  Otherwise auxiliary
 positive labels are chosen away from the center and away from their dangerous rows.  With at most two prescribed labels,
-there is always such a spare choice for $n\ge5$.
+there is always such a spare choice for $n\ge5$.  The odd center is the only place where $\rho(i)=i$ can interfere with the sign-extension construction; the construction either uses it deliberately as the single center hit or avoids it when choosing the auxiliary positive labels.
 
 Given any ordered pair $a\ne b$ in $\Sigma_n$, choose signs so that $b$ lies before $0$ and $a$ lies after $0$ in
 $T(w)$.  If $a,b$ are nonzero and $a\ne-b$, prescribe $|a|$ with the sign of $a$ and $|b|$ with the opposite sign to

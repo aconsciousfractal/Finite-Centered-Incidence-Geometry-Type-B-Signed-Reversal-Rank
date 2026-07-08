@@ -23,13 +23,13 @@ S8 does not by itself prove the S11A-H formula-to-true-scalar link and does not 
 ## Machine Artifact
 
 - Script: `scripts/p15_s8_hm_recurrence_certificate.py`
-- JSON: `certified/P15_S8_HM_RECURRENCE_CERTIFICATE.json`
+- JSON: `artifacts/certified/P15_S8_HM_RECURRENCE_CERTIFICATE.json`
 - Schema: `p15.s8.hm_recurrence_certificate.v1`
 
 Run command:
 
 ```text
-python -B scripts/p15_s8_hm_recurrence_certificate.py --max-m 100 --write-json certified/P15_S8_HM_RECURRENCE_CERTIFICATE.json
+python -B scripts/p15_s8_hm_recurrence_certificate.py --max-m 100 --write-json artifacts/certified/P15_S8_HM_RECURRENCE_CERTIFICATE.json
 ```
 
 ## Certificate Shape

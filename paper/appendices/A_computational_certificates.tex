@@ -8,6 +8,26 @@ they use integer or rational arithmetic and have no floating-point acceptance cr
 When a script exposes Markdown output, the replay command also supplies \texttt{--write-md <md>}.  Report-only commands omit output flags when the script does not expose them.  The finite rows in these reports are edge checks or diagnostics; the all-$m$ claims are carried by polynomial
 identities, integration-by-parts certificates, product/$\Phi$ block accounting, and ratio induction.
 
+\medskip
+\noindent\textbf{How to read the certificates.}
+The certificates have three roles.  First, the paper gives the structural reductions and states the scalar identities in mathematical form.  Second, the certificate scripts check exact algebraic identities over integer or rational polynomial rings, and exact integration-by-parts or recurrence reductions; these are not finite extrapolations from a long initial segment.  Third, finite replay scripts provide edge checks, convention checks, and small-row smoke tests.  Thus a line marked ``PASS'' below should be read as a specific exact identity or finite replay whose mathematical input and output are listed in the adjacent columns.
+
+\begin{center}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.32\textwidth}}
+\textbf{Claim block} & \textbf{Mathematical content checked} & \textbf{Primary replay artifacts}\\
+\hline
+Even rows & matching-scheme collapse and positive scalar for both standard channels & \path{P15_S4_EVEN_N_THEOREM_CERTIFICATE}\\
+Odd reduction & reduction to the two odd $k=1$ residual scalar sequences & \path{P15_S5_ODD_STRUCTURE_CERTIFICATE}\\
+Odd reference residual & $H_m$ true-scalar link, holonomic recurrence, and ratio positivity & \path{P15_S8_HM_RECURRENCE_CERTIFICATE}; \path{P15_S11A_H_TRUE_SCALAR_EDGE_INSERTION_VERIFIER}\\
+Odd pair-standard residual & $K_m$ true-scalar link, product/$\Phi$ accounting, recurrence, and positivity & \path{P15_S9C_KM_RECURRENCE_CERTIFICATE}; \path{P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER}; \path{P15_S11A_K_GLOBAL_PRODUCT_PHI_CERTIFICATE}\\
+End-to-end smoke replay & independent exact small-row rank checks against theorem values & \path{P15_S11_RAW_RANK_SMOKE_CHECK_CERTIFICATE}\\
+Positive-only separator & signed-poset obstruction and translate-tiler divisibility obstruction & \path{P15_S12_GATE_A_SIGNED_POSET_CERTIFICATE}; \path{P15_S12_GATE_B_TILER_CERTIFICATE}\\
+Finite native $B_n$ appendix & finite $n=8$ zero mechanisms and selected extra-defect audits & \path{P15_FULL_BN_*_CERTIFICATE}; external $n=8$ atlas CSVs\\
+\end{tabular}
+\end{center}
+
 \begingroup
 \scriptsize
 \hbadness=10000

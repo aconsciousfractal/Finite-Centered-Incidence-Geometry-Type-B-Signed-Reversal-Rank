@@ -65,8 +65,8 @@ For `lambda_plus=(4,1)`, the plus-side Specht module is the standard quotient of
 
 ```text
 scripts/p15_full_bn_lambda41_k3_plus_standard_certificate.py
-certified/P15_FULL_BN_LAMBDA41_K3_PLUS_STANDARD_CERTIFICATE.json
-certified/P15_FULL_BN_LAMBDA41_K3_PLUS_STANDARD_CERTIFICATE.md
+artifacts/certified/P15_FULL_BN_LAMBDA41_K3_PLUS_STANDARD_CERTIFICATE.json
+artifacts/certified/P15_FULL_BN_LAMBDA41_K3_PLUS_STANDARD_CERTIFICATE.md
 experiments/external_agents_2026_07_07/p15_full_bn_fingerprint_n8_kge2_defects.csv
 ```
 

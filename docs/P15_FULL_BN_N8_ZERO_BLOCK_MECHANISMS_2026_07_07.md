@@ -124,12 +124,12 @@ scripts/p15_full_bn_lambda11_group_algebra_scout.py
 scripts/p15_full_bn_pure_plus_zero_certificate.py
 scripts/p15_full_bn_pure_plus_johnson_degree_drop.py
 
-certified/P15_FULL_BN_ZERO_BLOCK_CERTIFICATE.md
-certified/P15_FULL_BN_ZERO_FAMILY_CERTIFICATE.md
-certified/P15_FULL_BN_ZERO_FAMILY_GROUP_ALGEBRA_CERTIFICATE.md
-certified/P15_LAMBDA11_GROUP_ALGEBRA_SCOUT_N8.md
-certified/P15_FULL_BN_PURE_PLUS_ZERO_CERTIFICATE.md
-certified/P15_FULL_BN_PURE_PLUS_JOHNSON_DEGREE_DROP_CERTIFICATE.md
+artifacts/certified/P15_FULL_BN_ZERO_BLOCK_CERTIFICATE.md
+artifacts/certified/P15_FULL_BN_ZERO_FAMILY_CERTIFICATE.md
+artifacts/certified/P15_FULL_BN_ZERO_FAMILY_GROUP_ALGEBRA_CERTIFICATE.md
+artifacts/certified/P15_LAMBDA11_GROUP_ALGEBRA_SCOUT_N8.md
+artifacts/certified/P15_FULL_BN_PURE_PLUS_ZERO_CERTIFICATE.md
+artifacts/certified/P15_FULL_BN_PURE_PLUS_JOHNSON_DEGREE_DROP_CERTIFICATE.md
 ```
 
 ## Red-Team 2026-07-07

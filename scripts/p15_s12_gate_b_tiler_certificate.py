@@ -284,7 +284,7 @@ def make_markdown(payload: dict) -> str:
         "",
         "Run from the project root:",
         "",
-        "`python -B scripts/p15_s12_gate_b_tiler_certificate.py --max-tail-probe-n 120 --write-json certified/P15_S12_GATE_B_TILER_CERTIFICATE.json --write-md certified/P15_S12_GATE_B_TILER_CERTIFICATE.md`",
+        "`python -B scripts/p15_s12_gate_b_tiler_certificate.py --max-tail-probe-n 120 --write-json artifacts/certified/P15_S12_GATE_B_TILER_CERTIFICATE.json --write-md artifacts/certified/P15_S12_GATE_B_TILER_CERTIFICATE.md`",
     ]
     return "\n".join(lines)
 

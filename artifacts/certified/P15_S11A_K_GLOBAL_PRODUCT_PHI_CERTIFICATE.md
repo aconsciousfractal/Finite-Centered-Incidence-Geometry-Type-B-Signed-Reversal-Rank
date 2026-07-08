@@ -63,4 +63,3 @@ The case `m=1` has no pair-standard `lambda_prime` eigenspace. For `m=2,3`, the 
 ## Boundary
 
 This certificate closes the S11A-K formula-to-true-scalar link. It does not broaden the public theorem beyond the S10 two-standard-channel boundary, and it makes no Type-D, full-fingerprint, separator, or enumeration-novelty claim.
-

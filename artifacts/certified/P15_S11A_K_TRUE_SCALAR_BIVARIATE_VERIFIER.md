@@ -54,4 +54,4 @@ This is a local algebra certificate. The standard product over independent non-c
 ## Artifacts
 
 - `scripts/p15_s11a_k_true_scalar_bivariate_verifier.py`
-- `certified/P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER.json`
+- `artifacts/certified/P15_S11A_K_TRUE_SCALAR_BIVARIATE_VERIFIER.json`
