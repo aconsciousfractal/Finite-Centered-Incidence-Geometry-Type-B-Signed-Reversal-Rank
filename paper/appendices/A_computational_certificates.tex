@@ -63,6 +63,21 @@ S12A & \path{p15_s12_gate_a_signed_poset_certificate.py} & \path{P15_S12_GATE_A_
 S12B & \path{p15_s12_gate_b_tiler_certificate.py} & \path{P15_S12_GATE_B_TILER_CERTIFICATE} & PASS; tiler obs.\\
 \end{tabular}
 \end{center}
+
+\noindent The type-D parity sublayer of Section~\ref{sec:typed} adds the following exact-arithmetic certificates
+(the replay scripts and their JSON artifacts reside in the \path{type_d} subdirectory of the companion repository;
+each script accepts \texttt{--no-write}/\texttt{--out} and reports a top-level \texttt{status} field).
+
+\begin{center}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}}
+\textbf{Replay} & \textbf{Command script} & \textbf{Artifact basename} & \textbf{Status/role}\\
+\hline
+D-sign & \path{opus_g15_C_closure_verify.py} & \path{P15D_G15_C_CLOSURE} & PASS; $s^{\chi}$ localization\\
+D-tail & \path{opus_g20_oatail_symbolic_verify.py} & \path{P15D_G20_OATAIL_SYMBOLIC} & PASS; orphan closed forms\\
+D-pair & \path{opus_g22_psdom_typeD_trace_verify.py} & \path{P15D_G22_PSDOM_TYPED_TRACE} & PASS; type-D trace\\
+D-form & \path{opus_g16_pairstd_closure_verify.py} & \path{P15D_G16_PAIRSTD_CLOSURE} & PASS; $\lambda'^{\chi}$ closed form\\
+\end{tabular}
+\end{center}
 \endgroup
 
 For readability, the internal replay IDs have the following public roles: S11A-H is the odd reference true-scalar link;
@@ -72,5 +87,8 @@ S12B is the translate-tiler divisibility certificate.  The filenames are stable 
 mathematical claims.
 
 The rank theorem uses only the scoped two-standard-channel conclusion.  The S12 rows add only the separately stated
-positive-only separator theorem for $X_n=\BtildeI_n(1,1)$, $n\ge4$.  The certificate table does not add a Type-D theorem,
-a full $B_n$ fingerprint theorem, a classification theorem, a general Weyl theorem, or an enumeration novelty claim.
+positive-only separator theorem for $X_n=\BtildeI_n(1,1)$, $n\ge4$.  The four type-D rows certify the finite and
+polynomial checks behind Theorem~\ref{thm:typed} (the sign-weighted closed forms, the $s^{\chi}$ localization and its
+orphan-family closed forms, and the type-D trace identity), all on the same two standard channels and the same diagonal
+cells.  The certificate table does not add a full $B_n$ fingerprint theorem, a classification theorem, a general Weyl
+theorem, or an enumeration novelty claim.

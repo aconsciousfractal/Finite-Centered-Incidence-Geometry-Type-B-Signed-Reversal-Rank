@@ -1,0 +1,323 @@
+{
+  "gate": "P15D-G22-PSDOM-TYPED-TRACE",
+  "status": "PASS",
+  "pass": true,
+  "checks_passed": 6,
+  "checks_total": 6,
+  "typeD_trace_replay_ok_n5_7": true,
+  "replay_rows": [
+    {
+      "n": 5,
+      "k": 1,
+      "size": 180,
+      "mu": "60",
+      "lam": 12,
+      "negfix": 72,
+      "trace": 252,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": null,
+      "k2_witness": null
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "size": 24,
+      "mu": "24",
+      "lam": 8,
+      "negfix": 8,
+      "trace": 56,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": true,
+      "k2_witness": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "size": 2,
+      "mu": "2",
+      "lam": 2,
+      "negfix": 0,
+      "trace": 6,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": true,
+      "k2_witness": null
+    },
+    {
+      "n": 7,
+      "k": 1,
+      "size": 30056,
+      "mu": "6760",
+      "lam": 3640,
+      "negfix": 14040,
+      "trace": 44096,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": null,
+      "k2_witness": null
+    },
+    {
+      "n": 7,
+      "k": 2,
+      "size": 2448,
+      "mu": "2056",
+      "lam": 736,
+      "negfix": 1080,
+      "trace": 5976,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": true,
+      "k2_witness": true
+    },
+    {
+      "n": 7,
+      "k": 3,
+      "size": 84,
+      "mu": "84",
+      "lam": 60,
+      "negfix": 36,
+      "trace": 288,
+      "T1": true,
+      "T2": true,
+      "T2_lam_uniform_all_pairs": true,
+      "T3_mu_le_size": true,
+      "traceid": true,
+      "csplit_match": true,
+      "lamD_pos": true,
+      "k_ge2_bound": true,
+      "k2_witness": null
+    }
+  ],
+  "k1_Km_gt_Dm_all_m2_39": true,
+  "k1_base_rows": [
+    {
+      "m": 2,
+      "Km": 28,
+      "Dm": 4,
+      "Km_gt_Dm": true,
+      "rho": "3660/7",
+      "thr": 16,
+      "rho_ge_4m2": true,
+      "Dratio": "20",
+      "step_ok": true
+    },
+    {
+      "m": 3,
+      "Km": 14640,
+      "Dm": 80,
+      "Km_gt_Dm": true,
+      "rho": "109201/305",
+      "thr": 36,
+      "rho_ge_4m2": true,
+      "Dratio": "33/5",
+      "step_ok": true
+    },
+    {
+      "m": 4,
+      "Km": 5241648,
+      "Dm": 528,
+      "Km_gt_Dm": true,
+      "rho": "161703944/327603",
+      "thr": 64,
+      "rho_ge_4m2": true,
+      "Dratio": "152/33",
+      "step_ok": true
+    },
+    {
+      "m": 5,
+      "Km": 2587263104,
+      "Dm": 2432,
+      "Km_gt_Dm": true,
+      "rho": "27072253935/40425986",
+      "thr": 100,
+      "rho_ge_4m2": true,
+      "Dratio": "145/38",
+      "step_ok": true
+    },
+    {
+      "m": 6,
+      "Km": 1732624251840,
+      "Dm": 9280,
+      "Km_gt_Dm": true,
+      "rho": "7952913182428/9024084645",
+      "thr": 144,
+      "rho_ge_4m2": true,
+      "Dratio": "492/145",
+      "step_ok": true
+    },
+    {
+      "m": 7,
+      "Km": 1526959331026176,
+      "Dm": 31488,
+      "Km_gt_Dm": true,
+      "rho": "6719318623083115/5964684886821",
+      "thr": 196,
+      "rho_ge_4m2": true,
+      "Dratio": "385/123",
+      "step_ok": true
+    }
+  ],
+  "k1_step_rho_gt_Dratio_all": true,
+  "k1_Dratio_lt_4m2_for_m_ge_3": true,
+  "k2_parity_even_witness_family": [
+    {
+      "n": 5,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 1,
+      "valid": true
+    },
+    {
+      "n": 7,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 3,
+      "valid": true
+    },
+    {
+      "n": 9,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 5,
+      "valid": true
+    },
+    {
+      "n": 11,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 7,
+      "valid": true
+    },
+    {
+      "n": 13,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 9,
+      "valid": true
+    },
+    {
+      "n": 15,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 11,
+      "valid": true
+    },
+    {
+      "n": 21,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 17,
+      "valid": true
+    },
+    {
+      "n": 31,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 27,
+      "valid": true
+    },
+    {
+      "n": 51,
+      "k": 2,
+      "l": 2,
+      "even_negs": true,
+      "neg_fixed": 47,
+      "valid": true
+    }
+  ],
+  "k2_witness_family_all_valid": true,
+  "typeD_rank_rows_n3_5_7": [
+    {
+      "n": 3,
+      "k": 1,
+      "size": 2,
+      "rank_ref": 2,
+      "rank_pair_std": 1,
+      "ok": true
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "size": 180,
+      "rank_ref": 3,
+      "rank_pair_std": 2,
+      "ok": true
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "size": 24,
+      "rank_ref": 3,
+      "rank_pair_std": 2,
+      "ok": true
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "size": 2,
+      "rank_ref": 3,
+      "rank_pair_std": 2,
+      "ok": true
+    },
+    {
+      "n": 7,
+      "k": 1,
+      "size": 30056,
+      "rank_ref": 4,
+      "rank_pair_std": 3,
+      "ok": true
+    },
+    {
+      "n": 7,
+      "k": 2,
+      "size": 2448,
+      "rank_ref": 4,
+      "rank_pair_std": 3,
+      "ok": true
+    },
+    {
+      "n": 7,
+      "k": 3,
+      "size": 84,
+      "rank_ref": 4,
+      "rank_pair_std": 3,
+      "ok": true
+    }
+  ],
+  "typeD_ranks_match_ceil_all": true
+}

@@ -1,0 +1,30 @@
+{
+  "gate": "P15D-G15-C-CLOSURE",
+  "status": "PASS",
+  "pass": true,
+  "checks_passed": 6,
+  "checks_total": 6,
+  "id_schi_eq_dT": true,
+  "SD_T_nonpos_on_band": true,
+  "RB_pointwise_ratio_le_B": true,
+  "RB_B_lt_1_on_band_m>=4": true,
+  "ORPH_single_at_m+1-k": true,
+  "ORPH_nonzero_only_3k<=2m+2": true,
+  "OA_exceptions_m4_139": [
+    [
+      7,
+      5,
+      1.0057142857142858
+    ]
+  ],
+  "C_direct_exceptions_m<160": [
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ]
+}

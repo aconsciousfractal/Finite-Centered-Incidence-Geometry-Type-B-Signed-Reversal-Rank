@@ -1,0 +1,17 @@
+{
+  "gate": "P15D-G16-PAIRSTD-CLOSURE",
+  "status": "PASS",
+  "pass": true,
+  "checks_passed": 8,
+  "checks_total": 8,
+  "lamChi_eq_ACminus1_Qm": true,
+  "lamChi_eq_Sform": true,
+  "lamChi_k1_closed": true,
+  "absLamChi_le_2_8m": true,
+  "lamB_ge_Spkk": true,
+  "lamB_pos": true,
+  "lamD_pos": true,
+  "dom_on_negchi": true,
+  "worst_domination_margin": "7.000 at (n,k)=(5, 1)",
+  "worst_lamB_over_Spkk": "3.500"
+}

@@ -1,0 +1,38 @@
+{
+  "gate": "P15D-G20-OATAIL",
+  "status": "PASS",
+  "pass": true,
+  "checks_passed": 16,
+  "checks_total": 16,
+  "RA_closed_form_exact_r>=3": true,
+  "RB_closed_form_exact_r>=2": true,
+  "ORPH_single_A": true,
+  "ORPH_single_B": true,
+  "i1_common_support_A_r>=3": true,
+  "i1_common_support_B_r>=2": true,
+  "qA_equiv_RA_ge_1": true,
+  "qB_equiv_RB_ge_1": true,
+  "qA(2)_neg_qA(3)_pos": true,
+  "qB(2)_pos": true,
+  "qA'(3)_pos": true,
+  "qB'(2)_pos": true,
+  "masterbound_A_r>=3": true,
+  "masterbound_B_r>=2": true,
+  "schi_pos_A_r>=2": true,
+  "schi_pos_B_r>=2": true,
+  "A2_basecase_schi(7,5)": 840,
+  "r1_exceptions": {
+    "schi(4,3)": -24,
+    "schi(2,2)": -1
+  },
+  "C_band_negatives_m<160": [
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ]
+}

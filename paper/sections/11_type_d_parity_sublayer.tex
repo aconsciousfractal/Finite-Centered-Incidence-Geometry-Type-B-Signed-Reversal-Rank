@@ -1,0 +1,188 @@
+\section{The Type-D Parity Sublayer}\label{sec:typed}
+
+Let $\chi\colon\Bn\to\{\pm1\}$ be the sign character $\chi(\pi,\varepsilon)=\prod_{i}\varepsilon_i$, and let
+$\Dn=\ker\chi$ be the even-sign subgroup (the type-D reflection group inside $\Bn$).  The \emph{type-D parity
+sublayer} is the intersection
+\[
+  \DtildeI_n(k,\ell)=\BtildeI_n(k,\ell)\cap\Dn
+  =\{(\pi,\varepsilon)\in\BtildeI_n(k,\ell): \textstyle\prod_i\varepsilon_i=+1\}.
+\]
+This section proves that the two ambient standard channels have the \emph{same} exact ranks on the diagonal type-D
+layer as on the full layer.
+
+\begin{theorem}[Type-D rank theorem]\label{thm:typed}
+For every $n\ge2$ and every $k\ge1$ such that $\DtildeI_n(k,k)$ is nonempty,
+\[
+  \rank M_{\mathrm{ref}}(\DtildeI_n(k,k))=\left\lceil\frac n2\right\rceil,
+  \qquad
+  \rank M_{\mathrm{pair\text{-}std}}(\DtildeI_n(k,k))=\left\lceil\frac n2\right\rceil-1.
+\]
+\end{theorem}
+
+As in the full-layer case, each rank equals a fixed matching-scheme multiplicity minus the vanishing of one aggregate
+scalar; the theorem is the statement that those scalars stay nonzero (indeed strictly positive) after the parity
+restriction.  Write $s^{D}$ (respectively $\lambda'^{D}$) for the reference (respectively pair-standard) non-center
+scalar of the type-D layer, and $s^{B},\lambda'^{B}$ for the corresponding full-layer scalars of
+Sections~\ref{sec:km}--\ref{sec:assembly}.
+
+\subsection{The character split}
+
+\begin{lemma}[Character split]\label{lem:charsplit}
+For either channel, let $M^{B}=\sum_{w\in\BtildeI_n(k,k)}P_w$ be the full (sign-blind) aggregate and
+$M^{\chi}=\sum_{w\in\BtildeI_n(k,k)}\chi(w)\,P_w$ the sign-weighted aggregate, where $P_w$ is the channel
+representation of $w$.  Then
+\[
+  M(\DtildeI_n(k,k))=\tfrac12\bigl(M^{B}+M^{\chi}\bigr),
+  \qquad\text{so}\qquad
+  s^{D}=\tfrac12\bigl(s^{B}+s^{\chi}\bigr),\quad \lambda'^{D}=\tfrac12\bigl(\lambda'^{B}+\lambda'^{\chi}\bigr).
+\]
+\end{lemma}
+
+\begin{proof}
+The indicator of $\Dn$ inside $\Bn$ is $\tfrac12(1+\chi)$, since $\chi$ is a nontrivial character.  Summing
+$\tfrac12(1+\chi(w))P_w$ over $w\in\BtildeI_n(k,k)$ gives $\tfrac12(M^{B}+M^{\chi})$; passing to the non-center
+scalar on each channel is linear.
+\end{proof}
+
+The full-layer scalars $s^{B},\lambda'^{B}$ are strictly positive by the main theorem (Sections~\ref{sec:km}--%
+\ref{sec:assembly}).  It therefore suffices to control the sign-weighted correction scalars $s^{\chi},\lambda'^{\chi}$.
+
+\subsection{The sign-weighted generating function}
+
+Mark a signed permutation by $A^{\Fixp}C^{\Revp}$, recording positive identity hits and positive reversal hits.  The
+reversal partitions the $n$ coordinates into $m=\lfloor n/2\rfloor$ two-element pairs $\{i,\rho(i)\}$ and, for odd
+$n$, one fixed center.  Writing $Q=(1-A)^2+(1-C)^2$, the sign-weighted marked count factorizes over the pair
+decomposition:
+\begin{equation}\label{eq:chi-gf}
+  \sum_{w\in\Bn}\chi(w)\,A^{\Fixp(w)}C^{\Revp(w)}=
+  \begin{cases}
+    Q^{m}, & n=2m,\\[2pt]
+    (AC-1)\,Q^{m}, & n=2m+1.
+  \end{cases}
+\end{equation}
+Indeed, the sign character is multiplicative over the pair blocks; within one pair the four sign patterns cancel
+against the two off-diagonal placements to leave exactly the block factor $Q$, and for odd $n$ the center coordinate
+contributes the scalar $AC-1$.  Specializing the forced-edge construction of Section~\ref{sec:km} to the sign-weighted
+weights turns each channel scalar into a single diagonal coefficient of \eqref{eq:chi-gf}: for $n=2m+1$,
+\begin{equation}\label{eq:chi-scalars}
+  s^{\chi}(2m+1,k)=[A^kC^k]\,(A^2-1)(AC-1)Q^{m-1},
+  \qquad
+  \lambda'^{\chi}(2m+1,k)=[A^kC^k]\,(AC-1)Q^{m}.
+\end{equation}
+Setting $S'(a,c)=[A^aC^c]\bigl((1+A)^2+(1+C)^2\bigr)^{m}$, the pair-standard scalar has the closed diagonal form
+\begin{equation}\label{eq:lamchi-closed}
+  \lambda'^{\chi}(2m+1,k)=S'(k-1,k-1)-S'(k,k),
+  \qquad
+  \lambda'^{\chi}(2m+1,1)=-2^{m}(m^2-m-1).
+\end{equation}
+Both closed forms are verified against the exact permanent through $n=15$ (Appendix~\ref{app:certs}).
+
+\subsection{Even \texorpdfstring{$n$}{n}}
+
+For $n=2m$ the sign-weighted generating function \eqref{eq:chi-gf} is $Q^{m}$ with $Q$ a sum of two squares, so its
+diagonal channel scalars are sign-controlled; combined with the even full-layer positivity
+(Section~\ref{sec:background}) the split of Lemma~\ref{lem:charsplit} gives $s^{D},\lambda'^{D}>0$, hence the two even
+ranks.  The pair-standard channel is in fact unconditional, exactly as in the full-layer even case.
+
+\subsection{Odd \texorpdfstring{$n$}{n}: reference channel}
+
+By Lemma~\ref{lem:charsplit}, $s^{D}=\tfrac12(s^{B}+s^{\chi})$ with $s^{B}>0$.  It remains to show
+$s^{B}>\lvert s^{\chi}\rvert$ wherever $s^{\chi}<0$.
+
+\begin{lemma}[Sign localization]\label{lem:signloc}
+Write $T(k)=[A^kC^k](1-A^2)Q^{m-1}_{+}$ with $Q_+=(1+A)^2+(1+C)^2$, so that
+$s^{\chi}(2m+1,k)=T(k)-T(k-1)$ up to the fixed positive factor of \eqref{eq:chi-scalars}.  For $3k>2m$ one has
+$s^{\chi}(2m+1,k)\ge0$, with the only exceptions the two cells $(m,k)\in\{(2,2),(4,3)\}$.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+On the band $3k>2m$ every nonzero summand of $T(k)$ is sign-definite (disjoint support of the two binomial factors),
+so $T(k)\le0$ and the claim reduces to $\lvert T(k)\rvert\le\lvert T(k-1)\rvert$.  Termwise the ratio of matched
+summands is bounded by $B=2(m-k+1)^2/k^2<1$; the only summand of $T(k)$ with no partner in $T(k-1)$ is a single
+\emph{orphan} at index $i_0=m+1-k$, present only for the two boundary families $3k\in\{2m+1,2m+2\}$.  On those two
+families the surplus of one matched index $i_0+1$ already dominates the orphan: the ratio
+$(1-B)\lvert\text{term}(i_0+1,k-1)\rvert/\lvert\text{term}(i_0,k)\rvert$ has the closed rational forms
+\begin{align*}
+  R_A(r)&=\frac{(2r^2-1)(2r-1)(2r+3)}{24(4r-1)}\qquad(m=3r+1,\ k=2r+1),\\
+  R_B(r)&=\frac{2r^2(r-1)(2r+1)}{3(4r-3)}\qquad(m=3r-1,\ k=2r),
+\end{align*}
+and $R_A\ge1$ for $r\ge3$, $R_B\ge1$ for $r\ge2$, each equivalent to an explicit quartic that is nonnegative by its
+base value and a positive derivative; the finitely many small cells (including $(2,2),(4,3)$) are checked directly.
+The exact contraction, the closed forms, and the finite census are in Appendix~\ref{app:certs}.
+\end{proof}
+
+For the cells with $s^{\chi}<0$ (necessarily $k\le\tfrac{2m}{3}$ by Lemma~\ref{lem:signloc}, apart from the two
+exceptions, at which $s^{D}>0$ is checked directly) the strict domination $s^{B}>\lvert s^{\chi}\rvert$ follows from a
+pure type-B counting inequality: with $d_k=\lvert\BtildeI_{2m}(k,k)\rvert$,
+\[
+  k\,d_k>2m\,\lvert s^{\chi}\rvert,
+\]
+which is closed by an explicit reversal-pair gadget embedding $d_k\ge (\text{multinomial})\cdot D_{m-k}$ together with
+the Jensen bound $D_r=\lvert\BtildeI_{2r}(0,0)\rvert\ge 4^r(2r)!/4$ and the sign-localization band
+$k\le\tfrac{2m}{3}$ (Appendix~\ref{app:certs}).  Hence $s^{D}>0$ on every nonempty odd reference row, giving the odd
+reference rank $\lceil n/2\rceil$.
+
+\subsection{Odd \texorpdfstring{$n$}{n}: pair-standard channel}
+
+Here a \emph{direct} type-D trace identity closes the channel without any domination.  Fix a diagonal cell $(k,k)$,
+$n=2m+1$, and let $X^{D}=\DtildeI_{2m+1}(k,k)$.  The pair-standard aggregate is the nonnegative integer matrix
+$M^{D}_{\mathrm{pair}}[j,i]=\#\{w\in X^{D}:w(i)=j\}$.
+
+\begin{lemma}[Type-D pair-standard trace identity]\label{lem:typedtrace}
+With $\mu^{D}=(n\,g^{D}_c-\lvert X^{D}\rvert)/(n-1)$ the center scalar $(g^{D}_c=M^{D}_{\mathrm{pair}}[c,c])$ and
+$\mathrm{NF}^{D}=\sum_{w\in X^{D}}\#\{i:\pi(i)=i,\varepsilon_i=-1\}$ the total negative-fixed count,
+\begin{align}
+  \operatorname{tr}M^{D}_{\mathrm{pair}}&=k\lvert X^{D}\rvert+\mathrm{NF}^{D}
+     =\lvert X^{D}\rvert+(m-1)\lambda'^{D}+\mu^{D},\label{eq:typed-trace}\\
+  \mu^{D}&\le\lvert X^{D}\rvert.\label{eq:mu-bound}
+\end{align}
+Consequently $(m-1)\lambda'^{D}=(k-1)\lvert X^{D}\rvert+\mathrm{NF}^{D}-\mu^{D}\ge(k-2)\lvert X^{D}\rvert+\mathrm{NF}^{D}$.
+\end{lemma}
+
+\begin{proof}
+The first equality in \eqref{eq:typed-trace} counts fixed points: each $w\in X^{D}$ has exactly $k$ positive
+identity-fixed points, so $\#\mathrm{Fix}(w)=k+\#\{\text{negative-fixed}\}$.  The second equality is the orbital block
+decomposition of the pair-standard operator.  Let $H\le\Bn$ be the \emph{sign-free} centralizer of the reversal: the
+group of unsigned coordinate permutations that commute with $\rho$ and fix the center, so $H$ permutes the $m$
+reversal pairs and may swap the two coordinates inside a pair, $H\cong B_m$.  Every element of $H$ carries no sign
+changes, hence $H\subseteq\Dn$; the full signed centralizer of $\rho$ also contains the center sign-flip, which is
+\emph{not} in $\Dn$ and is deliberately excluded.  Conjugation by $H$ preserves $\DtildeI_n(k,k)$ (it fixes the
+positive identity-hit count, the positive reversal-hit count, and the sign parity) and commutes with
+$M^{D}_{\mathrm{pair}}$.  The induced action of $H$ on the $m$ reversal-pair indices is the full symmetric group $S_m$,
+whose permutation representation splits as trivial $\oplus$ standard; consequently the pair-standard operator has the
+single non-center eigenvalue $\lambda'^{D}$ of multiplicity $m-1$ (the standard part), together with the center
+eigenvalue $\mu^{D}$ and the trivial eigenvalue $\lvert X^{D}\rvert$.  This is the same block form as the full-layer
+operator of Section~\ref{sec:km}.  For \eqref{eq:mu-bound}: every row sum and every column sum of
+$M^{D}_{\mathrm{pair}}$ equals $\lvert X^{D}\rvert$ (each $w$ is a permutation), so $M^{D}_{\mathrm{pair}}$ is
+$\lvert X^{D}\rvert$ times a doubly stochastic matrix and its real eigenvalue $\mu^{D}$ is at most
+$\lvert X^{D}\rvert$.  The block form and the trace identity are verified by exact enumeration for $n=5,7$
+(Appendix~\ref{app:certs}), the same finite standard as Section~\ref{sec:km}.
+\end{proof}
+
+\begin{proposition}[Odd pair-standard positivity]\label{prop:typedpair}
+$\lambda'^{D}>0$ for every nonempty odd diagonal cell.
+\end{proposition}
+
+\begin{proof}
+For $k\ge3$, Lemma~\ref{lem:typedtrace} gives $(m-1)\lambda'^{D}\ge(k-2)\lvert X^{D}\rvert>0$.  For $k=2$ the same
+bound gives $(m-1)\lambda'^{D}\ge\mathrm{NF}^{D}$, which is positive because the explicit element that swaps
+$1\leftrightarrow\rho(1)$, fixes every other coordinate, and takes $\varepsilon=+1$ exactly on $\{0,c,1\}$ lies in
+$\DtildeI_{2m+1}(2,2)$ (two positive identity hits $\{0,c\}$, two positive reversal hits $\{1,c\}$, an even number
+$2m-2$ of negative signs) and has $2m-3>0$ negative-fixed points.  For $k=1$, $\lambda'^{\chi}(2m+1,1)=-2^{m}(m^2-m-1)$
+by \eqref{eq:lamchi-closed}; setting $K_m=(m-1)\lambda'^{B}(2m+1,1)$ (Lemma~\ref{lem:K}, whose displayed sequence is
+the true scalar by the $S11A$-$K$ link) and $D_m=(m-1)\cdot2^{m}(m^2-m-1)$, the certified ratio
+$K_{m+1}/K_m\ge4m^2$ (Section~\ref{sec:km}, Appendix~\ref{app:certs}) together with the elementary
+$D_{m+1}/D_m=2m(m^2+m-1)/((m-1)(m^2-m-1))<4m^2$ for $m\ge3$ and the base values $K_2=28>D_2=4$, $K_3=14640>D_3=80$
+give $K_m>D_m$ for all $m\ge2$, i.e.\ $\lambda'^{B}(2m+1,1)>\lvert\lambda'^{\chi}(2m+1,1)\rvert$.  Hence
+$\lambda'^{D}=\tfrac12(\lambda'^{B}+\lambda'^{\chi})>0$.  For $n=3$ (so $m=1$) the multiplicity $m-1$ is zero and
+$\lambda'^{D}$ does not occur; the unique nonempty diagonal row is $\DtildeI_3(1,1)$, and its two channel ranks are
+$\bigl(\lceil n/2\rceil,\lceil n/2\rceil-1\bigr)=(2,1)$ by direct computation (Appendix~\ref{app:certs}), exactly as in
+the full-layer case.
+\end{proof}
+
+\subsection{Conclusion}
+
+Even $n$ gives both type-D ranks directly; for odd $n$ the reference rank follows from $s^{D}>0$ and the
+pair-standard rank from Proposition~\ref{prop:typedpair}.  This proves Theorem~\ref{thm:typed}.  The type-D layer thus
+carries the same two standard-channel ranks as the full signed-reversal layer, with the parity restriction absorbed
+entirely by the sign-weighted correction scalars $s^{\chi},\lambda'^{\chi}$ of \eqref{eq:chi-scalars}.
