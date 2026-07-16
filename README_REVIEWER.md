@@ -13,7 +13,7 @@ Recommended reading order:
 Replay tiers:
 
 1. Core theorem replay: S4/S5/S7/S8/S9/S9C plus S11 scalar-link checks.
-2. Type-D sublayer replay: `type_d/` G15/G16/G20/G22 (same two channels, same diagonal cells; `opus_g16` is the heavy one).
+2. Type-D sublayer replay: `type_d/` G15/G16/G20/G22 (same two channels, same diagonal cells; `p15d_g16` is the heavy one).
 3. Separator add-on replay: S12 Gate A/B.
 4. Optional full-fingerprint appendix replay: finite `n=8` zero mechanisms and selected fixed-plus audits.
 

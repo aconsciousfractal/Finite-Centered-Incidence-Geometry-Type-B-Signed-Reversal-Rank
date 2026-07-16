@@ -51,16 +51,16 @@ python -B scripts/p15_s12_gate_b_tiler_certificate.py --max-tail-probe-n 120 --w
 These certify the type-D parity sublayer `D~I_n(k,k) = B~I_n(k,k) ∩ D_n`. The Type-D
 scripts use the flag convention `--out <json>` / `--no-write` (not `--write-json`), report
 a top-level `status` field, and exit `0` on PASS. They need only the Python standard
-library; `opus_g22` additionally imports the shared engine from `scripts/`.
+library; `p15d_g22` additionally imports the shared engine from `scripts/`.
 
 ```text
-python -B type_d/opus_g15_C_closure_verify.py --out type_d/P15D_G15_C_CLOSURE.json
-python -B type_d/opus_g20_oatail_symbolic_verify.py --out type_d/P15D_G20_OATAIL_SYMBOLIC.json
-python -B type_d/opus_g22_psdom_typeD_trace_verify.py --out type_d/P15D_G22_PSDOM_TYPED_TRACE.json
-python -B type_d/opus_g16_pairstd_closure_verify.py --out type_d/P15D_G16_PAIRSTD_CLOSURE.json
+python -B type_d/p15d_g15_C_closure_verify.py --out type_d/P15D_G15_C_CLOSURE.json
+python -B type_d/p15d_g20_oatail_symbolic_verify.py --out type_d/P15D_G20_OATAIL_SYMBOLIC.json
+python -B type_d/p15d_g22_psdom_typeD_trace_verify.py --out type_d/P15D_G22_PSDOM_TYPED_TRACE.json
+python -B type_d/p15d_g16_pairstd_closure_verify.py --out type_d/P15D_G16_PAIRSTD_CLOSURE.json
 ```
 
-`opus_g16_pairstd_closure_verify.py` recomputes exact permanents up to `n = 13` and takes
+`p15d_g16_pairstd_closure_verify.py` recomputes exact permanents up to `n = 13` and takes
 several minutes; the other three finish in well under a minute. See `type_d/README.md`.
 
 ## Optional Full-Fingerprint Appendix Replay

@@ -53,7 +53,6 @@ S9C & \path{p15_s9c_km_recurrence_certificate.py} & \path{P15_S9C_KM_RECURRENCE_
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.32\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}}
 \textbf{Replay} & \textbf{Command script} & \textbf{Artifact basename} & \textbf{Status/role}\\
 \hline
-S10 & \path{p15_s10_public_boundary_review.py} & \path{P15_S10_PUBLIC_BOUNDARY_CERTIFICATE} & PASS; boundary\\
 S11D & \path{p15_s11_raw_rank_smoke_check.py} & \path{P15_S11_RAW_RANK_SMOKE_CHECK_CERTIFICATE} & PASS; raw rank\\
 S11A-H & \path{p15_s11a_h_true_scalar_edge_insertion_verifier.py} & \path{P15_S11A_H_TRUE_SCALAR_EDGE_INSERTION_VERIFIER} & PASS; $H$ link\\
 S11A-transfer & \path{p15_s11a_scalar_link_symbolic_verifier.py} & \path{P15_S11A_SCALAR_LINK_SYMBOLIC_VERIFIER} & PASS; transfer\\
@@ -72,10 +71,10 @@ each script accepts \texttt{--no-write}/\texttt{--out} and reports a top-level \
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.10\textwidth}>{\raggedright\arraybackslash}p{0.34\textwidth}>{\raggedright\arraybackslash}p{0.36\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}}
 \textbf{Replay} & \textbf{Command script} & \textbf{Artifact basename} & \textbf{Status/role}\\
 \hline
-D-sign & \path{opus_g15_C_closure_verify.py} & \path{P15D_G15_C_CLOSURE} & PASS; $s^{\chi}$ localization\\
-D-tail & \path{opus_g20_oatail_symbolic_verify.py} & \path{P15D_G20_OATAIL_SYMBOLIC} & PASS; orphan closed forms\\
-D-pair & \path{opus_g22_psdom_typeD_trace_verify.py} & \path{P15D_G22_PSDOM_TYPED_TRACE} & PASS; type-D trace\\
-D-form & \path{opus_g16_pairstd_closure_verify.py} & \path{P15D_G16_PAIRSTD_CLOSURE} & PASS; $\lambda'^{\chi}$ closed form\\
+D-sign & \path{p15d_g15_C_closure_verify.py} & \path{P15D_G15_C_CLOSURE} & PASS; $s^{\chi}$ localization\\
+D-tail & \path{p15d_g20_oatail_symbolic_verify.py} & \path{P15D_G20_OATAIL_SYMBOLIC} & PASS; orphan closed forms\\
+D-pair & \path{p15d_g22_psdom_typeD_trace_verify.py} & \path{P15D_G22_PSDOM_TYPED_TRACE} & PASS; type-D trace\\
+D-form & \path{p15d_g16_pairstd_closure_verify.py} & \path{P15D_G16_PAIRSTD_CLOSURE} & PASS; $\lambda'^{\chi}$ closed form\\
 \end{tabular}
 \end{center}
 \endgroup
