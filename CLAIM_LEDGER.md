@@ -1,5 +1,7 @@
 # Claim Ledger
 
+> Canonical ledger with the official PAPP CL Level column: `docs/CLAIM_LEDGER.md` (Level column added 2026-07-17, ledger A-1; official taxonomy Gate-Disciplined-Computational-Mathematics/docs/CLAIM_LEVELS.md). This root copy is retained unchanged below for continuity.
+
 | Claim ID | Claim | Evidence | Boundary | Status |
 |---|---|---|---|---|
 | P15-DEF-OBJECT | The object is the signed-reversal diagonal row `B~I_n(k,k)` inside `B_n`, with nonempty rows characterized by the stated boundary cases. | `docs/SOURCE_LOCK.md`; `paper/sections/02_definitions_main_statement.tex`; S5 nonempty checks | Definition/source lock only; no enumeration novelty. | Public-safe |
